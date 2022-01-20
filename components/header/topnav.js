@@ -2,7 +2,7 @@ import React from "react";
 
 export default function TopNav() {
   return (
-    <div className="bg-white md:block hidden  w-full py-2">
+    <div className="bg-white fixed z-30 border-b border-gray-200 md:block hidden  w-full py-2">
       <div className="max-w-7xl mx-auto px-5 text-zinc-800">
         <ul className="flex w-full gap-x-10 gap-y-2 flex-wrap">
           <li className="hover:text-green-500 cursor-pointer py-4">Home</li>
