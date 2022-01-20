@@ -10,6 +10,7 @@ export default function MobileNav() {
     gallery: false,
     other: false,
   });
+
   const [diaplsymenu, setdisplaymenu] = useState(false);
   if (typeof document !== "undefined") {
     const body = document.getElementsByTagName("body")[0];
