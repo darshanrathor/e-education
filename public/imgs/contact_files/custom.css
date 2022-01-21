@@ -1,0 +1,649 @@
+@font-face {
+    font-family: GothamRMedium;
+    src: url(https://upastrology.com/assets/fonts/vbm.otf) format("opentype")
+}
+@font-face {
+    font-family: GothamRBold;
+    src: url(https://upastrology.com/assets/fonts/vb.otf) format("opentype")
+}
+@font-face {
+    font-family: GothamRegular;
+    src: url(https://upastrology.com/assets/fonts/Brandon_reg.otf) format("opentype")
+}
+
+body {
+    font-family: GothamRegular, sans-serif;
+    color: #1f2e3d;
+    font-weight: 400;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: GothamRBold, sans-serif;
+}
+
+a {
+    font-family: GothamRMedium, sans-serif;
+    color: #666;
+    text-decoration: none;
+    background-color: transparent;
+}
+a:hover{
+    text-decoration: none;
+    color: #332f2f;
+}
+/*nav css*/
+.main-header .nav-link{
+    font-size: 16px;
+    font-family: GothamRMedium, sans-serif;
+    letter-spacing: 0.3px;
+    /*font-weight: 600;*/
+    color: #475873!important;
+    text-transform: uppercase;
+}
+.main-header li.nav-item:hover a.nav-link, .main-header li.nav-item:hover a.nav-link small {
+    color: #e74252 !important;
+}
+a.nav-link small img svg{
+    fill: #9c9c9c !important;
+    color: #9c9c9c !important;
+}
+.main-header .nav-link small{
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: -4px;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    color: #9c9c9c;
+    font-family: GothamRMedium, sans-serif;
+    display: block;
+}
+@media (min-width: 992px){
+    .main-header .navbar-nav .nav-link {
+        margin-right: 20px;
+    }
+}
+#site-mobile-navigation-toggle {
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index: 998;
+    /*background-color: #e1eaed;*/
+    background-color: #bcdce6;
+    padding-top: 8px;
+    font-size: 18px;
+}
+#site-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: 10000;
+    background-color: #fff;
+}
+.mobile-menu>li:nth-child(odd)>a {
+    background-color: #eee;
+}
+
+.mobile-menu>li:nth-child(even)>a {
+    background-color: #f4f4f4;
+}
+
+.mobile-menu>li.submenu li a{
+    background-color: #fff;
+}
+
+.mobile-menu a{
+    padding: 19px 15px 11px;
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #171617;
+}
+
+.sf-menu a {
+    padding: 19px 15px 11px;
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+/*end nav css */
+
+/*nav css dark theme*/
+
+.main-header.dark-theme .nav-link{
+    color: #585858!important;
+}
+
+.main-header.dark-theme{
+    background-color: #2c2c2c !important;
+}
+.main-header.dark-theme .nav-link{
+    color: #dad5d5 !important;
+}
+.main-header.dark-theme li.nav-item:hover a.nav-link, .main-header li.nav-item:hover a.nav-link small {
+    color: #f4f4f4 !important;
+}
+.main-header.dark-theme li.nav-item a.nav-link{
+    border-bottom: 2px dashed #2c2c2c;
+
+}
+.main-header.dark-theme li.nav-item:hover a.nav-link{
+    border-bottom: 2px dashed #f4f4f4;
+}
+/*end nav cdd dark theme*/
+
+/*footer*/
+.footer-wrapper {
+    background: #545454;
+    padding: 40px 0px 40px;
+    /*margin-top: 5em;*/
+}
+.footer-info {
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(26, 26, 26, 0.50);
+}
+.footer-links a, .footer-links a:hover {
+    font-size: 14px;
+    color: #b7b7b7;
+    /*text-decoration: underline;*/
+    /*font-family: AvenirNextRegular;*/
+    margin-bottom: 10px;
+    display: block;
+}
+.footer-links a.dropdown-item{
+    color: #1f2e3d;
+}
+.footer-links h6{
+    color: #bfbdbd;
+}
+/*end footer*/
+
+/*form css*/
+form.custom-form label{
+    font-size: 18px;
+    width: auto;
+    display: inline-block;
+    color: #4c4c4c;
+}
+@media (max-width: 992px) {
+    form.custom-form label {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding-left: 15px;
+    }
+    form.custom-form .radio-am-pm label {
+        padding-left: 5px;
+    }
+    .form-check-inline {
+        margin-right: 0;
+    }
+    .form-check-inline .form-check-input {
+        margin-right: 0;
+
+    }
+    .form-group .radio-am-pm{
+        padding: 0;
+    }
+}
+form.custom-form div.display-inline{
+    display: inline;
+    display: -moz-inline-stack;
+}
+form.custom-form input, form.custom-form select{
+    height: 40px;
+    border: 0;
+    border-bottom: 2px solid #bbb;
+    border-radius: 0;
+    padding: 0;
+    margin-left: 0;
+    display: inline-block;
+    display: -moz-inline-stack;
+    font-size: 18px;
+    font-weight: bolder;
+    color:#0e0e0e;
+    background: transparent !important;
+}
+form.custom-form input::placeholder{
+    color: #34495e;
+    opacity: 0.3;
+}
+form.custom-form .custom-width{
+    max-width: 100px;
+}
+
+form.custom-form .slash {
+    padding-top: 10px;
+    font-size: 18px;
+    display: inline-block;
+    display: -moz-inline-stack;
+
+}
+form.custom-form .form-control:focus, .form-group.focus .form-control {
+    border-color: #bbb;
+    outline: 0;
+    box-shadow: none;
+}
+
+form.custom-form .form-control {
+background-color: transparent;
+}
+form.custom-form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+/*end form css*/
+
+/*features*/
+@-webkit-keyframes zoominoutsinglefeatured {
+    0% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes zoominoutsinglefeatured {
+    0% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+#core-feature-area.bg-1 {
+    background-image: url(https://upastrology.com/assets/img/feature-bg-1.png);
+}
+#core-feature-area {
+    padding: 112px 0 118px;
+    position: relative;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#core-feature-area.bg-1 .core-feature-circle .circle1 {
+    right: 1%;
+    top: 0%;
+    width: 11%;
+}
+#core-feature-area.bg-1 .core-feature-circle img {
+    position: absolute;
+    opacity: 0.5;
+    -webkit-animation: zoominoutsinglefeatured 4s infinite;
+    animation: zoominoutsinglefeatured 4s infinite;
+}
+#core-feature-area.bg-1 .core-feature-circle .circle2 {
+    right: 18%;
+    top: 17%;
+    width: 13%;
+}
+#core-feature-area.bg-1 .core-feature-circle .circle3 {
+    right: 6%;
+    top: 34%;
+    width: 5%;
+}
+/*second section*/
+#about-area.bg-1 {
+    background-image: url(https://upastrology.com/assets/img/about-bg-1.png);
+}
+#about-area {
+    position: relative;
+    padding: 140px 0 126px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.about-app-mocup {
+    position: absolute;
+    top: 80px;
+    right: 130px;
+}
+@media only screen and (max-width: 479px) and (min-width: 360px) {
+    .about-app-mocup {
+        position: unset;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .about-app-mocup {
+        position: absolute;
+        top: 120px;
+        right: 110px;
+    }
+}
+#about-area.bg-1 .about-area-circle .circle1 {
+    right: 35%;
+    top: 35%;
+    width: 14%;
+}
+#about-area.bg-1 .about-area-circle img {
+    position: absolute;
+    opacity: 0.5;
+    -webkit-animation: zoominoutsinglefeatured 4s infinite;
+    animation: zoominoutsinglefeatured 4s infinite;
+}
+#about-area.bg-1 .about-area-circle .circle2 {
+    right: 3%;
+    top: 40%;
+    width: 10%;
+}
+@media only screen and (max-width: 479px) and (min-width: 360px) {
+    .about-app-mocup {
+        position: unset;
+        margin-top: 50px;
+        text-align: center;
+    }
+}
+.text-padding-100{
+    padding-top: 100px;
+}
+.text-padding-25{
+    padding-top: 25px;
+}
+.text-padding-50{
+    padding-top: 50px;
+}
+.left-right-padding-100{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.mt--80{
+    margin-top: -50px;
+}
+
+@media only screen and (max-width: 768px) {
+    .text-padding-100{
+        padding-top: 0;
+    }
+    .text-padding-50{
+        padding-top: 0;
+    }
+    .text-padding-25{
+        padding-top: 0;
+    }
+    #about-area {
+        padding: 0;
+    }
+    .about-cont {
+        margin-top: 0;
+    }
+    #core-feature-area {
+        padding: 112px 0 0;
+    }
+    .left-right-padding-100{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .mm-b-l{
+        margin-bottom: 3rem;
+    }
+    .mm-b-s{
+        margin-bottom: 1rem;
+    }
+    .mt--80{
+        margin-top: inherit;
+    }
+}
+
+/*core Feature*/
+.section-heading h2 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+}
+.core-feature-single {
+    -webkit-box-shadow: 0px 10px 30px 0px rgba(21, 10, 82, 0.2);
+    box-shadow: 0px 10px 30px 0px rgba(21, 10, 82, 0.2);
+    padding: 60px 30px 10px;
+    border-radius: 4px;
+    background-color: #fff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+@media only screen and (max-width: 479px) and (min-width: 360px) {
+    .core-feature-single {
+        padding: 60px 30px 25px;
+    }
+    .core-feature-single {
+        margin: 0 0 30px;
+    }
+}
+/*css for natal horoscope*/
+.form-backgroung-img .form-bg-img{
+    /*left: 100%;
+    width: 65%;*/
+    /*margin-top: -80px;*/
+    /*margin-left: -50px;*/
+    margin-left: 0;
+    left: 100%;
+    width: 100%;
+}
+.form-backgroung-img img{
+    position :absolute;
+    /*opacity: 0.5;*/
+    z-index: -1;
+}
+/*end css for natal horoscope*/
+
+/*elipse-style*/
+#elipse-style{
+    padding: 100px 0;
+    background: url(https://upastrology.com/assets/img/backgrounds/elipse-bg.png) no-repeat;
+    background-size: cover;
+}
+#elipse-style .about .about-block .about-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+#elipse-style .about .about-block .about-item {
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 30px;
+}
+#elipse-style .about .about-block .about-item.active {
+    background: #7d71d3;
+}
+
+.about .about-block .about-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+.about .about-block .about-item {
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 30px;
+}
+.about .about-block .about-item.active {
+    background: #7d71d3;
+}
+.about .about-block .about-item .icon {
+    width: 50px;
+}
+.about .about-block .about-item.active .icon i {
+     color: #fff;
+ }
+.about .about-block .about-item .icon i {
+    font-size: 48px;
+    color: #7d71d3;
+}
+.about .about-block .about-item .content {
+    margin-left: 30px;
+}
+.about .about-block .about-item.active .content h5, .about .about-block .about-item.active .content p {
+    color: #fff;
+}
+.about .about-block .about-item .content h5 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+/*end elipse-style*/
+
+
+.report-list .list-group-item {
+    padding: 0.35rem 1.25rem;
+}
+/*Birth chart Css*/
+.shape-1{
+    left: -40%;
+    top: 55%;
+}
+.shape-2{
+    max-width: 350px;
+    left: 0;
+    top: -74px;
+}
+.btn-custom{
+    background: #424242;
+    color: #f4f4f4;
+    border-color: #f2f2f2;
+}
+.btn-custom:hover, .btn-custom:hover:active, .btn-custom:focus{
+    background: #757575;
+    color: #ffffff;
+    border-color: #f2f2f2;
+}
+/*report-list*/
+ul.report-list{
+    font-size: 16px;
+    letter-spacing: 0;
+    word-spacing: 1px;
+}
+
+a.sample_link {
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    padding-top: 10px;
+    display: block;
+    cursor: pointer;
+    color: #171617;
+    text-align: center;
+}
+a.sample_link:hover{
+    color: #54a8d0;
+}
+a.view-sample{
+    color: #54a8d0;
+    text-decoration: underline;
+}
+a.view-sample:hover{
+    color: #332f2f;
+}
+
+.feature-style{
+    background-color: #f4f4f4;
+    margin: 0 auto;
+    border-top: 4px solid #d7d7d7;
+    border-bottom: 4px solid #d7d7d7;
+}
+.feature-style .icon{
+    width: 60px;
+    height: 60px;
+    opacity: .6;
+}
+/*Feedback css*/
+.feedback-form-padding-large{
+    padding-top: 8rem;
+    padding-bottom: 8rem
+}
+.feedback-background-img{
+    background-image: url(https://upastrology.com/assets/img/feedback-page.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+/*End Feedback css*/
+.price-tag {
+    font-size: 2.4em;
+    margin-bottom: 15px;
+}
+.dropdown-toggle.icon-right::after {
+    float: right;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #757575;
+ }
+
+
+.custom-stripe-btn{
+    background: #6772e5;
+    color: #fff;
+    border: 1px solid #444daf;
+    cursor: pointer;
+
+}
+.custom-stripe-btn:hover{
+    color: #fff;
+    background: #444daf;
+    border: 1px solid #444daf;
+}
+
+.btn-custom-3d{
+    background-image: linear-gradient(#70F570, #49C628);
+    font-weight: bolder;
+    color: #2d2d2d;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.25);
+    display: inline-block;
+    border-radius: 11px;
+    border: none;
+    padding: 12px;
+    font-size: 1.4em;
+    cursor: pointer;
+    transition: all .2s ease-out;
+    outline: 0;
+}
+.btn-custom-3d:hover{
+    color: #f9f9f9;
+    background-image: linear-gradient( 180deg, #49C628 10%, #49C628 100%);
+}
+
+#emailFromReportID{
+    height: 42px;
+    padding-left: 12px;
+
+}
+#emailFromReportID:focus{
+
+}
+
+.btn-paypal{
+    text-align: center;
+    background-image: url("https://www.paypalobjects.com/webstatic/en_AU/i/buttons/btn_paywith_primary_l.png");
+    background-repeat: no-repeat;
+    height: 44px;
+    border: none;
+    cursor: pointer;
+
+}
