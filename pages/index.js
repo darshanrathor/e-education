@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <>
-      <div className="bg-blue-400 h-40">Hello world</div>
+      {/* <div className="bg-blue-400 h-40">Hello world</div> */}
 
       {/*section 2 */}
 
