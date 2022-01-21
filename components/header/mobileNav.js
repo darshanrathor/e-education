@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -23,16 +24,41 @@ export default function MobileNav() {
       body.style.overflow = "auto";
     }
   }
+  console.log(diaplsymenu);
   return (
-    <div className="md:hidden fixed z-30 block h-full pb-20">
-      <div className="flex justify-between px-4 gap-10 py-4 border-b border-gray-200">
+    <div className="md:hidden fixed z-30 block h-full pb-20 w-full">
+      <div className="flex justify-between px-4 gap-10 py-2 border-b border-gray-200 w-full">
         <Link href="/">
-          <a>
-            <img src="/imgs/logo.png" alt="logo" className="w-4/5" />
+          <a className="w-[320px] relative  h-[50px]">
+            <Image
+              layout="fill"
+              objectFit="contain"
+              src="/imgs/logo.png"
+              alt="logo"
+            />
           </a>
         </Link>
-        <button onClick={() => setdisplaymenu((prev) => !prev)} className="">
-          {diaplsymenu ? (
+        {!diaplsymenu ? (
+          <button onClick={() => setdisplaymenu((prev) => !prev)} className="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className={`h-6 stroke-zinc-800 w-6`}
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        ) : (
+          <button
+            onClick={() => setdisplaymenu((prev) => !prev)}
+            className=" bg-white"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -45,22 +71,8 @@ export default function MobileNav() {
                 clipRule="evenodd"
               />
             </svg>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 stroke-zinc-800 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          )}
-        </button>
+          </button>
+        )}
       </div>
       {diaplsymenu && (
         <div className="flex flex-col gap-5 py-8 px-4 overflow-y-scroll h-full">
