@@ -4,7 +4,7 @@ export default function Home() {
       {/* <div className="bg-blue-400 h-40">Hello world</div> */}
 
       {/*section 2 */}
-
+      <span className="font-bold text-xl py-40">Helllo world</span>
 
       {/* <div className=" bg-white   w-full flex-col flex ">
         <h1 className="text-center flex flex-col text-green-500 justify-center w-full">

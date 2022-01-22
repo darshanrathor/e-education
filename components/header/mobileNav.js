@@ -24,9 +24,8 @@ export default function MobileNav() {
       body.style.overflow = "auto";
     }
   }
-  console.log(diaplsymenu);
   return (
-    <div className="md:hidden fixed z-30 block h-full pb-20 w-full">
+    <div className="md:hidden bg-white fixed z-30 block h-full pb-20 w-full">
       <div className="flex justify-between px-4 gap-10 py-2 border-b border-gray-200 w-full">
         <Link href="/">
           <a className="w-[320px] relative  h-[50px]">
@@ -81,7 +80,9 @@ export default function MobileNav() {
               onClick={() =>
                 setmenu((prev) => ({ ...prev, course: !prev.course }))
               }
-              className="flex text-zinc-800 justify-between w-full items-center text-lg"
+              className={`${
+                diaplsymenu.course ? "font-bold" : ""
+              } flex text-zinc-800 hover:font-bold justify-between w-full items-center text-lg`}
             >
               Courses
               <svg
