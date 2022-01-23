@@ -13,3 +13,18 @@
   bottom: 100%;
   left: 24px;
 }
+#app {
+  height: 100%;
+}
+
+.blocksection::before {
+  background-color: rgb(254, 240, 138, 0.5);
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}

@@ -1,10 +1,9 @@
 import React from "react";
-import MobileNav from "../components/header/mobileNav";
 
 export default function Testing() {
   return (
     <div className="h-[1500px]">
-      <MobileNav />
+      <div className="py-20">hellow wrold</div>
     </div>
   );
 }
