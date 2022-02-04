@@ -1,3 +1,4 @@
+import Script from "next/script";
 import { Header, Paragraph } from "../components/commonComponent/commonSIze";
 import SizeComponent from "../components/commonComponent/sizeComponent";
 
@@ -30,9 +31,28 @@ export default function Home() {
   ];
   return (
     <>
+      <div className="relative overflow-hidden before:absolute before:z-[-1] before:bg-[url('/imgs/banner.png')] before:translate-x-[62%] before:top-[0%]  before:bg-center pt-32 pb-0 md:pt-32 md:pb-32 before:w-full md:before:top-0 before:right-0 md:before:-translate-x-10 before:scale-[1.1] before:h-full  before:bg-cover  w-full">
+        <div className="flex md:flex-row px-5 flex-col gap-10 md:gap-20 items-center max-w-7xl mx-auto">
+          <div className="w-full flex flex-col gap-12">
+            <h1 style={{ lineHeight: 1 }} className="md:text-6xl text-5xl">
+              Build skills with courses flexible online courses
+            </h1>
+            <button className="bg-blue-700 px-5 py-3.5 rounded hover:bg-blue-600 text-white font-bold text-xl max-w-[250px]">
+              Join For Free
+            </button>
+          </div>
+          <div className="w-full">
+            <img
+              src="/imgs/Education-amico.svg"
+              className="w-full"
+              alt="education"
+            />
+          </div>
+        </div>
+      </div>
       <div className="md:py-36 py-20 max-w-7xl mx-auto px-5">
-        <div className="border-2 flex flex-col gap-5 border-blue-600 bg-[url('/course/bg2.jpeg')] bg-cover bg-no-repeat w-full bg-right boorder-blue-500 rounded-2xl p-10 md:p-14 ">
-          <Header extra="max-w-3xl">
+        <div className="border-2 flex flex-col gap-5 border-blue-600 md:bg-[url('/course/bg2.jpeg')] bg-cover bg-no-repeat w-full bg-right boorder-blue-500 rounded-2xl p-7 md:p-14 ">
+          <Header extra="max-w-xl md:text-5xl text-3xl">
             We Provide The Best Teaching/Learning Support For All
           </Header>
           <button className="hover:bg-blue-700 bg-blue-600 max-w-max text-white rounded-full py-2 font-bold text-lg px-7 ">
@@ -50,7 +70,7 @@ export default function Home() {
       >
         <div className=" w-full flex-col flex gap-6 justify-center text-center max-w-4xl mx-auto">
           <Header className="text-center flex flex-col justify-center w-full">
-            Welcome to Maa Durga Institute Of Education
+            Welcome to Akash Institute Of Education
           </Header>
           <p className="md:text-lg  text-zinc-800">
             As well know I.T has become the heart and soul of every part of life
@@ -90,9 +110,8 @@ export default function Home() {
               Study Material & Notes
             </h3>
             <p className="text-zinc-700 text-base text-center">
-              Maa Durga Institute of Education has prepared the complete section
-              of notes which contains a set of exercises which students must
-              read.
+              Akash Institute of Education has prepared the complete section of
+              notes which contains a set of exercises which students must read.
             </p>
           </div>
           <div className="flex flex-col sm:col-span-2 md:col-span-1 gap-5 bg-white p-8 rounded-xl">
@@ -119,7 +138,7 @@ export default function Home() {
           <div className="flex flex-col gap-7 max-w-4xl  justify-center mx-auto text-center">
             <Header>Popular Courses We Offer</Header>
             <Paragraph>
-              Maa Durga Institute of Education offers a wide range of Computer
+              Akash Institute of Education offers a wide range of Computer
               courses. Select a category below & find the best course for you.
               Thousands of students have benefited from our computer courses in
               Kanpur.
@@ -175,48 +194,61 @@ export default function Home() {
           </button>
         </div>
       </SizeComponent>
-      <div className="bg-blue-100 w-full">
-        <div className="max-w-4xl flex flex-col gap-10 sm:gap-20 mx-auto py-28 px-5 ">
-          <div className="flex flex-col gap-6 text-center">
-            <Header>
-              We Provide The Best Teaching/Learning Support For All
+      <div className="bg-blue-800 bg-[url('/imgs/bg.svg')] bg-cover bg-center py-20 md:py-32 px-5   w-full">
+        <div className="max-w-7xl flex md:flex-row flex-col gap-20 md:gap-10 sm:gap-20 mx-auto ">
+          <div className="flex flex-col gap-7 text-left w-full md:w-5/12">
+            <Header extra="md:text-5xl text-3xl text-zinc-100">
+              Grow your career today with the Education courses
             </Header>
-            <Paragraph>
-              Maa Durga Institute of Education offers a variety of courses –
-              technology courses for IT students, career programs for students
-              wanting to enter the IT sector, certification courses for IT
-              professionals to enhance their career and basic IT programs for
-              school students, housewives/senior citizens etc.
+            <Paragraph extra="text-zinc-300">
+              Akash institute offers a variety of courses – technology courses
+              for IT students, career programs for students wanting to enter the
+              IT sector, certification courses for IT professionals to enhance
+              their career and basic IT programs for school students,
+              housewives/senior citizens etc.
             </Paragraph>
+            <button className="bg-zinc-100 mt-2 text-blue-800 rounded-[60px] shadow-xl p-4 text-xl font-semibold max-w-[230px]  justify-items-center hover:bg-zinc-300">
+              Explore Courses
+            </button>
           </div>
-          <div className="flex mx-auto sm:flex-row flex-col divide-y-4 sm:divide-y-0 sm:divide-x-4 divide-blue-500">
-            <div className="flex font-semibold text-zinc-700  flex-col py-5 sm:px-10 justify-center text-center gap-1 text-3xl">
-              1187+
-              <span className="text-2xl font-normal">Students</span>
-            </div>
-            <div className="flex font-semibold text-zinc-700 flex-col py-5 px-4 sm:px-10  justify-center text-center gap-1 text-3xl">
-              25+
-              <span className="text-2xl font-normal">Courses</span>
-            </div>
-            <div className="flex font-semibold text-zinc-700 flex-col py-5 sm:px-10  justify-center text-center gap-1 text-3xl">
-              15+
-              <span className="text-2xl font-normal">Teachers</span>
+          <div className="flex justify-center gap-5 w-full md:w-7/12	">
+            <div className="grid grid-cols-2 grid-rows-2 gap-10 circle">
+              <div className="flex font-bold bg-white  shadow-md rounded-[30px] text-zinc-700  flex-col py-8 px-7 w-full justify-center text-center gap-3 text-5xl">
+                1187+
+                <span className="text-2xl font-normal text-zinc-700">
+                  Happy Students
+                </span>
+              </div>
+              <div className="row-span-2  flex justify-center">
+                <div className="flex font-bold w-full my-auto  bg-white  shadow-md rounded-[30px] text-zinc-700  flex-col py-12 px-7 justify-center text-center gap-3 text-5xl">
+                  25+
+                  <span className="text-2xl font-normal">Courses</span>
+                </div>
+              </div>
+
+              <div className="flex font-bold bg-white  shadow-md rounded-[30px] text-zinc-700  flex-col py-10 px-7 justify-center text-center gap-3 text-5xl">
+                15+
+                <span className="text-2xl font-normal">Teachers</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <section className=" flex gap-20 py-24 flex-col max-w-6xl mx-auto px-5">
+      <section className=" flex gap-20 py-28 flex-col max-w-7xl mx-auto px-5">
         <div className="flex flex-col gap-3">
+          <span className="uppercase max-w-max mx-auto font-semibold mb-8 text-sm text-blue-500 py-1 px-5 rounded-full bg-sky-50">
+            Testenomial
+          </span>
           <h1 className="text-center">What customers says about us.</h1>
           <p className="text-center md:text-xl text-lg text-zinc-500">
             Let us help answer the most common questions you might have.
           </p>
         </div>
-        <div className="grid gap-10 md:grid-cols-3 grid-cols-1 ">
+        <div className=" flex overflow-x-auto w-full py-10">
           {review.map((item, i) => (
             <div
               key={i}
-              className="flex w-full flex-col hover:shadow-lg gap-5 p-12 border border-gray-300 bg-gray-50 rounded-xl"
+              className="flex relative w-full  min-w-[350px] cursor-default mr-10 flex-col hover:shadow-xl hover:shadow-blue-200/40 gap-6 py-12 px-10 border border-blue-200 bg-white rounded-xl"
             >
               <div className="flex gap-6 items-center">
                 <img
@@ -226,7 +258,12 @@ export default function Home() {
                 />
                 <h5>{item.name}</h5>
               </div>
-              <Paragraph style="text-zinc-600 text-xl">{item.desc}</Paragraph>
+              <Paragraph extra="text-zinc-600 text-xl pb-5">
+                {item.desc}
+              </Paragraph>
+              <div className="absolute bottom-4 right-5">
+                <img src="/imgs/quote.svg" alt="quote" className="w-10 " />
+              </div>
             </div>
           ))}
         </div>

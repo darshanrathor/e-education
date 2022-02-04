@@ -8,11 +8,7 @@ export default function Layout(props) {
   return (
     <div>
       <TopNav />
-      <MobileNav />
-      <div className="md:py-0 py-16 w-full min-h-screen">
-        <BannerCarousel />
-        {props.children}
-      </div>
+      <div className=" w-full min-h-screen">{props.children}</div>
       <Footer />
     </div>
   );
