@@ -1,4 +1,3 @@
-import Script from "next/script";
 import { Header, Paragraph } from "../components/commonComponent/commonSIze";
 import SizeComponent from "../components/commonComponent/sizeComponent";
 
@@ -31,8 +30,8 @@ export default function Home() {
   ];
   return (
     <>
-      <div className="relative overflow-hidden before:absolute before:z-[-1] before:bg-[url('/imgs/banner.png')] before:translate-x-[62%] before:top-[0%]  before:bg-center pt-32 pb-0 md:pt-32 md:pb-32 before:w-full md:before:top-0 before:right-0 md:before:-translate-x-10 before:scale-[1.1] before:h-full  before:bg-cover  w-full">
-        <div className="flex md:flex-row px-5 flex-col gap-10 md:gap-20 items-center max-w-7xl mx-auto">
+      <div className="relative overflow-hidden before:bg-[length:1400px_1000px] before:bg-no-repeat before:scale-[1.1] before:absolute before:z-[-1] before:bg-[url('/imgs/banner.png')] before:translate-x-[60%]  before:top-[0%]   before:bg-center pt-36 pb-0 md:pt-32 md:pb-32 before:w-full before:right-0 md:before:-translate-x-10  before:h-full  w-full">
+        <div className="flex md:flex-row px-5 flex-col gap-16 md:gap-20 items-center max-w-7xl mx-auto">
           <div className="w-full flex flex-col gap-12">
             <h1 style={{ lineHeight: 1 }} className="md:text-6xl text-5xl">
               Build skills with courses flexible online courses
@@ -77,10 +76,10 @@ export default function Home() {
             new a day. In the light of this statement it has become compulsory
             for every type of education stream to have I.T in its plumage. To
             meet your need, we have computer hardware and software programs of
-            all sorts on your doorstep by the efforts of Maa Durga Institute of
-            Education, a renowned national level group of computer education.
-            All the courses are taught by experienced and certified faculty. Our
-            trainers constantly update their technical skills to maintain their
+            all sorts on your doorstep by the efforts of Akash Institute, a
+            renowned national level group of computer education. All the courses
+            are taught by experienced and certified faculty. Our trainers
+            constantly update their technical skills to maintain their
             expertise.
           </p>
         </div>
@@ -93,7 +92,7 @@ export default function Home() {
                 className="w-[70px]"
               />
             </div>
-            <h3 className="md:text-xl tetx-lg text-zinc-800 justify-center max-w-4xl mx-auto gap-6 ">
+            <h3 className="text-xl text-center text-zinc-800 justify-center max-w-4xl mx-auto gap-6 ">
               Practical Approach
             </h3>
             <p className="text-zinc-700 text-base text-center">
@@ -106,7 +105,7 @@ export default function Home() {
             <div className="flex justify-center">
               <img src="/imgs/book.png" alt="practical" className="w-[70px]" />
             </div>
-            <h3 className="md:text-xl tetx-lg text-zinc-800 justify-center max-w-4xl mx-auto gap-6 ">
+            <h3 className="text-xl text-center text-zinc-800 justify-center max-w-4xl mx-auto gap-6 ">
               Study Material & Notes
             </h3>
             <p className="text-zinc-700 text-base text-center">
@@ -122,7 +121,7 @@ export default function Home() {
                 className="w-[70px]"
               />
             </div>
-            <h3 className="md:text-xl tetx-lg text-zinc-800 justify-center max-w-4xl mx-auto gap-6 ">
+            <h3 className="text-xl text-center  text-zinc-800 justify-center max-w-4xl mx-auto gap-6 ">
               Experienced Trainers
             </h3>
             <p className="text-zinc-700 text-base text-center">
@@ -213,20 +212,20 @@ export default function Home() {
           </div>
           <div className="flex justify-center gap-5 w-full md:w-7/12	">
             <div className="grid grid-cols-2 grid-rows-2 gap-10 circle">
-              <div className="flex font-bold bg-white  shadow-md rounded-[30px] text-zinc-700  flex-col py-8 px-7 w-full justify-center text-center gap-3 text-5xl">
+              <div className="flex font-bold bg-white  shadow-md rounded-[30px] text-zinc-700  flex-col py-8 px-7 w-full justify-center text-center gap-3 text-4xl  md:text-5xl">
                 1187+
                 <span className="text-2xl font-normal text-zinc-700">
                   Happy Students
                 </span>
               </div>
               <div className="row-span-2  flex justify-center">
-                <div className="flex font-bold w-full my-auto  bg-white  shadow-md rounded-[30px] text-zinc-700  flex-col py-12 px-7 justify-center text-center gap-3 text-5xl">
+                <div className="flex font-bold w-full my-auto  bg-white  shadow-md rounded-[30px] text-zinc-700  flex-col py-12 px-7 justify-center text-center gap-3 text-4xl  md:text-5xl">
                   25+
                   <span className="text-2xl font-normal">Courses</span>
                 </div>
               </div>
 
-              <div className="flex font-bold bg-white  shadow-md rounded-[30px] text-zinc-700  flex-col py-10 px-7 justify-center text-center gap-3 text-5xl">
+              <div className="flex font-bold bg-white  shadow-md rounded-[30px] text-zinc-700  flex-col py-10 px-7 justify-center text-center gap-3 text-4xl  md:text-5xl">
                 15+
                 <span className="text-2xl font-normal">Teachers</span>
               </div>
@@ -236,7 +235,7 @@ export default function Home() {
       </div>
       <section className=" flex gap-20 py-28 flex-col max-w-7xl mx-auto px-5">
         <div className="flex flex-col gap-3">
-          <span className="uppercase max-w-max mx-auto font-semibold mb-8 text-sm text-blue-500 py-1 px-5 rounded-full bg-sky-50">
+          <span className="uppercase max-w-max mx-auto font-semibold mb-8 text-xs sm:text-sm text-blue-500 py-1 px-5 rounded-full bg-sky-50">
             Testenomial
           </span>
           <h1 className="text-center">What customers says about us.</h1>
@@ -275,11 +274,11 @@ export default function Home() {
 function Card(props) {
   return (
     <div className="hover:-translate-y-2 transition-all duration-150 ease-in hover:shadow-300/40 rounded-xl shadow-xl shadow-200/30">
-      <div className="w-full ">
+      <div className=" h-[200px] w-full">
         <img
           src={props.image}
           alt={props.title}
-          className="rounded-t-xl w-full"
+          className="rounded-t-xl object-cover w-full h-full"
         />
       </div>
 

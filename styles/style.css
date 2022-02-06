@@ -1,3 +1,10 @@
+
+input{
+  outline:none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
 .tooltiparrow {
   box-shadow: rgb(17 17 23 / 20%) 2px 2px 10px;
 }

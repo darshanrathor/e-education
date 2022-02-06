@@ -36,4 +36,15 @@
   a {
     @apply transition duration-150 ease-in;
   }
+  .st:focus-within ~ label,
+  .st:not(:placeholder-shown) ~ label {
+    @apply transform scale-75 -translate-y-6 top-2;
+  }
+
+  .st:focus-within ~ label {
+    @apply text-blue-700;
+  }
+  .labelt {
+    @apply origin-[0]  absolute left-0 top-3  transition-all cursor-text	 duration-150 ease-in font-semibold;
+  }
 }
