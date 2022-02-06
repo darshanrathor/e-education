@@ -23,7 +23,7 @@ export default function TopNav() {
     const handleNavigation = (e) => {
       const window1 = e.currentTarget;
       const scroll = window1.pageYOffset || document.documentElement.scrollTop;
-      if (scroll > 180) {
+      if (scroll > 100) {
         sety(true);
       } else {
         sety(false);
@@ -42,12 +42,12 @@ export default function TopNav() {
       <div
         className={`${
           y ? "border-b w-full bg-white shadow-md" : "py-3  "
-        } transition duration-100 ease-linear fixed top-0 z-20 w-full`}
+        } transition duration-50 ease-linear fixed top-0 z-20 w-full`}
       >
         <div className="max-w-7xl w-full py-1 gap-10 mx-auto px-5 text-zinc-800 flex justify-between items-center ">
           <div className="w-[150px]">
             <Link href="/">
-              <a className="w-full h-[60px] flex justify-start relative ">
+              <a className="w-full flex justify-start  h-[60px] relative ">
                 <Image
                   layout="fill"
                   objectFit="contain"
@@ -94,16 +94,74 @@ export default function TopNav() {
               </span>
               <ul className="tooltiparrow shadow-xl text-zinc-800 group-hover:opacity-100 group-hover:visible invisible opacity-0  absolute z-10 w-[220px] top-full left-0 bg-white rounded-xl p-4">
                 <li className="py-2 hover:text-blue-500 cursor-pointer">
-                  Accounting
+                  <Link href="/">
+                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                      DCA
+                    </a>
+                  </Link>
                 </li>
-                <li className="py-2 hover:text-blue-500 cursor-pointer ">
-                  Hardware & Networking
+                <li className="py-2 hover:text-blue-500 cursor-pointer">
+                  <Link href="/">
+                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                      PGDCA
+                    </a>
+                  </Link>
                 </li>
-                <li className="py-2 hover:text-blue-500 cursor-pointer ">
-                  Mobile Repairing
+                <li className="py-2 hover:text-blue-500 cursor-pointer">
+                  <Link href="/">
+                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                      DTP
+                    </a>
+                  </Link>
                 </li>
-                <li className="py-2 hover:text-blue-500 cursor-pointer ">
-                  Software
+                <li className="py-2 hover:text-blue-500 cursor-pointer">
+                  <Link href="/">
+                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                      Accounting
+                    </a>
+                  </Link>
+                </li>
+                <li className="py-2 hover:text-blue-500 cursor-pointer">
+                  <Link href="/">
+                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                      Typing
+                    </a>
+                  </Link>
+                </li>
+                <li className="py-2 hover:text-blue-500 cursor-pointer">
+                  <Link href="/">
+                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                      Fundamentals
+                    </a>
+                  </Link>
+                </li>
+                <li className="py-2 hover:text-blue-500 cursor-pointer">
+                  <Link href="/">
+                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                      DGD
+                    </a>
+                  </Link>
+                </li>
+                <li className="py-2 hover:text-blue-500 cursor-pointer">
+                  <Link href="/">
+                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                      ADCA
+                    </a>
+                  </Link>
+                </li>
+                <li className="py-2 hover:text-blue-500 cursor-pointer">
+                  <Link href="/">
+                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                      Spoken EN
+                    </a>
+                  </Link>
+                </li>
+                <li className="py-2 hover:text-blue-500 cursor-pointer">
+                  <Link href="/">
+                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                      CCC/0'Level
+                    </a>
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -124,18 +182,26 @@ export default function TopNav() {
                   />
                 </svg>
               </span>
-              <ul className="tooltiparrow shadow-xl text-zinc-800 group-hover:opacity-100 group-hover:visible invisible opacity-0 absolute z-10 w-[110px] top-full left-0 bg-white rounded-xl p-4">
+              <ul className="tooltiparrow shadow-xl text-zinc-800 group-hover:opacity-100 group-hover:visible invisible opacity-0 absolute z-10 w-[130px] top-full left-0 bg-white rounded-xl p-4">
                 <li className="py-2 hover:text-blue-500 cursor-pointer">
-                  Photo(s)
+                  <Link href="/">
+                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                      Photo(s)
+                    </a>
+                  </Link>
                 </li>
-                <li className="py-2 hover:text-blue-500 cursor-pointer ">
-                  Video(s)
+                <li className="py-2 hover:text-blue-500 cursor-pointer">
+                  <Link href="/">
+                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                      Video(s)
+                    </a>
+                  </Link>
                 </li>
               </ul>
             </li>
 
             <li className="py-2">
-              <Link href="/">
+              <Link href="/contact">
                 <a className="hover:text-blue-500 font-semibold rounded-full hover:shadow-lg hover:bg-white py-1 px-5 text-lg cursor-pointer">
                   Contact
                 </a>

@@ -47,7 +47,7 @@ export default function MobilemenuContent(props) {
             onClick={() =>
               setmenu((prev) => ({ ...prev, course: !prev.course }))
             }
-            className="flex group-hover:text-blue-700 font-semibold text-zinc-800 gap-5 w-full items-center text-3xl"
+            className="flex group-hover:text-blue-700 font-semibold text-zinc-800 gap-5 w-full items-center md:text-3xl text-2xl"
           >
             Courses
             <svg
@@ -72,14 +72,76 @@ export default function MobilemenuContent(props) {
                 : "h-0 opcaity-0 invisible  hidden"
             } list-disc  text-zinc-600 flex flex-col text-xl gap-4 ml-6`}
           >
-            <li className=" hover:text-blue-700  cursor-pointer">Accounting</li>
-            <li className=" hover:text-blue-700 cursor-pointer ">
-              Hardware & Networking
+            <li className="py-0 hover:text-blue-700 cursor-pointer">
+              <Link href="/">
+                <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                  DCA
+                </a>
+              </Link>
             </li>
-            <li className=" hover:text-blue-700 cursor-pointer ">
-              Mobile Repairing
+            <li className="py-0 hover:text-blue-700 cursor-pointer">
+              <Link href="/">
+                <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                  PGDCA
+                </a>
+              </Link>
             </li>
-            <li className=" hover:text-blue-700 cursor-pointer ">Software</li>
+            <li className="py-0 hover:text-blue-700 cursor-pointer">
+              <Link href="/">
+                <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                  DTP
+                </a>
+              </Link>
+            </li>
+            <li className="py-0 hover:text-blue-700 cursor-pointer">
+              <Link href="/">
+                <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                  Accounting
+                </a>
+              </Link>
+            </li>
+            <li className="py-0 hover:text-blue-700 cursor-pointer">
+              <Link href="/">
+                <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                  Typing
+                </a>
+              </Link>
+            </li>
+            <li className="py-0 hover:text-blue-700 cursor-pointer">
+              <Link href="/">
+                <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                  Fundamentals
+                </a>
+              </Link>
+            </li>
+            <li className="py-0 hover:text-blue-700 cursor-pointer">
+              <Link href="/">
+                <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                  DGD
+                </a>
+              </Link>
+            </li>
+            <li className="py-0 hover:text-blue-700 cursor-pointer">
+              <Link href="/">
+                <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                  ADCA
+                </a>
+              </Link>
+            </li>
+            <li className="py-0 hover:text-blue-700 cursor-pointer">
+              <Link href="/">
+                <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                  Spoken EN
+                </a>
+              </Link>
+            </li>
+            <li className="py-0 hover:text-blue-700 cursor-pointer">
+              <Link href="/">
+                <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                  CCC/0'Level
+                </a>
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -88,7 +150,7 @@ export default function MobilemenuContent(props) {
             onClick={() =>
               setmenu((prev) => ({ ...prev, gallery: !prev.gallery }))
             }
-            className="flex group-hover:text-blue-700 font-semibold  text-zinc-800 gap-7 w-full items-center text-3xl"
+            className="flex group-hover:text-blue-700 font-semibold  text-zinc-800 gap-7 w-full items-center md:text-3xl text-2xl"
           >
             Gallery
             <svg
@@ -111,21 +173,24 @@ export default function MobilemenuContent(props) {
               menu.gallery
                 ? "h-auto opacity-100 visible block"
                 : "h-0 opcaity-0 hidden invisible"
-            } list-disc  text-zinc-600 flex flex-col text-xl gap-4  ml-6`}
+            } list-disc  text-zinc-600 flex flex-col font-semibold text-xl gap-4  ml-6`}
           >
-            <li className=" hover:text-blue-700 cursor-pointer">Photo(s)</li>
+            <li className=" hover:text-blue-700  cursor-pointer">Photo(s)</li>
             <li className=" hover:text-blue-700 cursor-pointer ">Video(s)</li>
           </ul>
         </div>
         <button
           onClick={() => setmenu((prev) => ({ ...prev, course: !prev.course }))}
-          className=" font-semibold hover:text-blue-700 text-zinc-800  w-full text-left text-3xl"
+          className=" font-semibold hover:text-blue-700 text-zinc-800  w-full text-left md:text-3xl text-2xl"
         >
           About
         </button>
         <button
-          onClick={() => setmenu((prev) => ({ ...prev, course: !prev.course }))}
-          className=" font-semibold hover:text-blue-700 text-zinc-800  w-full text-left text-3xl"
+          onClick={() => {
+            router.push("/contact");
+            setmenu((prev) => ({ ...prev, course: !prev.course }));
+          }}
+          className=" font-semibold hover:text-blue-700 text-zinc-800  w-full text-left md:text-3xl text-2xl"
         >
           Contact
         </button>

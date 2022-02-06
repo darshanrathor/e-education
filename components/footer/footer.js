@@ -1,11 +1,12 @@
 import Link from "next/link";
 import React from "react";
+import { Paragraph } from "../commonComponent/commonSIze";
 
 export default function Footer() {
   const navigation = {
     title: "Courses",
     lins: [
-      { link: "/-chart", text: "DCA" },
+      { link: "/", text: "DCA" },
       { link: "/", text: "PGDCA" },
       { link: "/", text: "DTP" },
       { link: "/", text: "Accounting" },
@@ -19,34 +20,97 @@ export default function Footer() {
     ],
   };
   const resourse = {
-    title: "Company",
+    title: "More Links",
     lins: [
       { link: "/", text: "About Institute" },
-      { link: "/", text: "Download" },
-      { link: "/", text: "Check Certificate" },
-      { link: "/", text: "Online Registration" },
-      { link: "/", text: "Franchise Membership" },
+      { link: "/", text: "Gallery" },
+      { link: "/contact", text: "Contact" },
     ],
   };
 
-  const use = {
-    title: "More Link",
-    lins: [
-      { link: "/", text: "Gallery" },
-      { link: "/", text: "About Us" },
-      { link: "/", text: "Contact" },
-    ],
-  };
+  // const use = {
+  //   title: "More Link",
+  //   lins: [
+  //     { link: "/", text: "Gallery" },
+  //     { link: "/", text: "Contact" },
+  //   ],
+  // };
   return (
-    <div className="pt-24 bg-zinc-900 px-5">
-      <div className=" md:py-14 grid gap-12 grid-cols-2  md:grid-cols-4 border-t max-w-6xl mx-auto">
+    <div className="pt-20  bg-zinc-900 px-5">
+      <div className=" md:py-14 grid gap-x-14 gap-y-10 grid-cols-1  md:grid-cols-6  max-w-6xl mx-auto md:pb-0 pb-20">
+        <div className="flex flex-col gap-5 cursor-default w-full md:col-span-2">
+          <div className="h-[80px]">
+            <img src="/imgs/logo.png" alt="logo" className="h-full" />
+          </div>
+          <p className="md:text-lg text-zinc-300">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book{" "}
+          </p>
+        </div>
         <FooterSection title={navigation.title} links={navigation.lins} />
         <FooterSection title={resourse.title} links={resourse.lins} />
-        <FooterSection title={use.title} links={use.lins} />
-        <div></div>
+        {/* <FooterSection title={use.title} links={use.lins} /> */}
+        <div className="flex flex-col gap-4 md:col-span-2">
+          <span className="text-xl text-zinc-50 self-start font-semibold">
+            Contact
+          </span>
+          <div className="flex flex-col gap-4">
+            <span className="flex gap-3 items-center text-zinc-300">
+              <svg
+                className="w-8 h-8 fill-white rounded-full"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g data-name="Layer 21" id="Layer_21">
+                  <path
+                    class="cls-1"
+                    d="M16,31a3,3,0,0,1-2.21-1C10.14,26,4,18.39,4,13.36A12.19,12.19,0,0,1,16,1,12.19,12.19,0,0,1,28,13.36c0,5-6.14,12.59-9.79,16.65A3,3,0,0,1,16,31ZM16,3A10.2,10.2,0,0,0,6,13.36c0,3.14,3.47,8.86,9.28,15.31a1,1,0,0,0,1.44,0C22.53,22.22,26,16.5,26,13.36A10.2,10.2,0,0,0,16,3Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M16,19a6,6,0,1,1,6-6A6,6,0,0,1,16,19ZM16,9a4,4,0,1,0,4,4A4,4,0,0,0,16,9Z"
+                  />
+                </g>
+              </svg>
+              <p className="text-zinc-300 tetx-sm md:max-w-[230px]">
+                2750 Quadra Street Victoria Road, New York, Canada
+              </p>
+            </span>
+            <span className="flex gap-3 items-center text-zinc-300">
+              <svg
+                className="w-8 h-8 fill-zinc-300"
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title />
+                <g data-name="1" id="_1">
+                  <path d="M348.73,450.06a198.63,198.63,0,0,1-46.4-5.85c-52.43-12.65-106.42-44.74-152-90.36s-77.71-99.62-90.36-152C46.65,146.75,56.15,99.61,86.69,69.07l8.72-8.72a42.2,42.2,0,0,1,59.62,0l50.11,50.1a42.18,42.18,0,0,1,0,59.62l-29.6,29.59c14.19,24.9,33.49,49.82,56.3,72.63s47.75,42.12,72.64,56.31L334.07,299a42.15,42.15,0,0,1,59.62,0l50.1,50.1a42.16,42.16,0,0,1,0,59.61l-8.73,8.72C413.53,439,383.73,450.06,348.73,450.06ZM125.22,78a12,12,0,0,0-8.59,3.56l-8.73,8.72c-22.87,22.87-29.55,60-18.81,104.49,11.37,47.13,40.64,96.1,82.41,137.86s90.73,71,137.87,82.41c44.5,10.74,81.61,4.06,104.48-18.81l8.72-8.72a12.16,12.16,0,0,0,0-17.19l-50.09-50.1a12.16,12.16,0,0,0-17.19,0l-37.51,37.51a15,15,0,0,1-17.5,2.72c-30.75-15.9-61.75-39.05-89.65-66.95s-51-58.88-66.94-89.63a15,15,0,0,1,2.71-17.5l37.52-37.51a12.16,12.16,0,0,0,0-17.19l-50.1-50.11A12.07,12.07,0,0,0,125.22,78Z" />
+                  <path d="M364.75,269.73a15,15,0,0,1-15-15,99.37,99.37,0,0,0-99.25-99.26,15,15,0,0,1,0-30c71.27,0,129.25,58,129.25,129.26A15,15,0,0,1,364.75,269.73Z" />
+                  <path d="M428.15,269.73a15,15,0,0,1-15-15c0-89.69-73-162.66-162.65-162.66a15,15,0,0,1,0-30c106.23,0,192.65,86.43,192.65,192.66A15,15,0,0,1,428.15,269.73Z" />
+                </g>
+              </svg>
+              (+91)8356037560
+            </span>
+            <span className="flex gap-3 items-center text-zinc-300">
+              <svg
+                viewBox="0 0 32 32"
+                className="h-8 w-8 fill-zinc-300"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title />
+                <g id="mail">
+                  <path d="M29,6H3L2.92,6a.78.78,0,0,0-.21,0l-.17.07a.65.65,0,0,0-.15.1.67.67,0,0,0-.15.14l-.06.06a.36.36,0,0,0,0,.09,1.08,1.08,0,0,0-.08.19A1.29,1.29,0,0,0,2,6.9S2,7,2,7V25a1,1,0,0,0,1,1H29a1,1,0,0,0,1-1V7A1,1,0,0,0,29,6ZM16,14.81,6.2,8H27.09ZM4,24V8.91l11.43,7.91,0,0a1.51,1.51,0,0,0,.18.09l.08,0A1.09,1.09,0,0,0,16,17h0a1,1,0,0,0,.41-.1l.07,0,0,0L28,9.79V24Z" />
+                </g>
+              </svg>
+              info@example.com
+            </span>
+          </div>
+        </div>
       </div>
       <div className="pt-10 items-center w-full pb-14 text-sm text-zinc-400 border-t max-w-6xl mx-auto flex justify-between">
-        <span>© Copyright 2022 Akash Institute Of Education.</span>
+        <span>© Copyright 2022 Akash Institute.</span>
         <div className="flex max-w-xs justify-end w-full  gap-5">
           <a href="/">
             <svg
@@ -122,16 +186,18 @@ export default function Footer() {
 
 function FooterSection(props) {
   return (
-    <div className="flex  flex-col gap-4 items-start">
-      <span className="text-xl text-zinc-50 self-start font-semibold">
-        {props.title}
-      </span>
-      <div className="flex  text-sm flex-col gap-2 md:text-lg text-zinc-400">
-        {props.links.map((item, i) => (
-          <Link key={i} href={item.link}>
-            <a className=" text-zinc-300 hover:text-zinc-500">{item.text}</a>
-          </Link>
-        ))}
+    <div className="flex justify-start md:justify-center">
+      <div className="flex  flex-col gap-4 items-start">
+        <span className="text-xl text-zinc-50 self-start font-semibold">
+          {props.title}
+        </span>
+        <div className="flex  text-base flex-col gap-2 md:text-lg text-zinc-400">
+          {props.links.map((item, i) => (
+            <Link key={i} href={item.link}>
+              <a className=" text-zinc-300 hover:text-zinc-500">{item.text}</a>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
