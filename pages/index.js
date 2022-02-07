@@ -34,7 +34,7 @@ export default function Home() {
         <div className="flex md:flex-row px-5 flex-col gap-16 md:gap-20 items-center max-w-7xl mx-auto">
           <div className="w-full flex flex-col gap-12">
             <h1 style={{ lineHeight: 1 }} className="md:text-6xl text-5xl">
-              Build skills with courses flexible online courses
+              Build skills with courses flexible Advance courses
             </h1>
             <button className="bg-blue-700 px-5 py-3.5 rounded hover:bg-blue-600 text-white font-bold text-xl max-w-[250px]">
               Join For Free
@@ -125,7 +125,7 @@ export default function Home() {
               Experienced Trainers
             </h3>
             <p className="text-zinc-700 text-base text-center">
-              Our institute well-known from last six years in Kanpur, U.P.
+              Our institute well-known 
               Because of our expert and experienced trainers, they have lots of
               technical knowledge.
             </p>
@@ -138,9 +138,8 @@ export default function Home() {
             <Header>Popular Courses We Offer</Header>
             <Paragraph>
               Akash Institute of Education offers a wide range of Computer
-              courses. Select a category below & find the best course for you.
-              Thousands of students have benefited from our computer courses in
-              Kanpur.
+              courses. find the best and most popular course for you.
+              Thousands of students have benefited from our computer courses.
             </Paragraph>
           </div>
           <div className="grid max-w-6xl mx-auto sm:grid-cols-2 grid-cols-1 md:grid-cols-3 gap-8">

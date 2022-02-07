@@ -3,16 +3,20 @@ export default function Aboutus(){
         <>
         
 
-<div className=" bg-gradient-to-r from-cyan-700 to-blue-800 mx-auto px-9 py-10 w-full " >
+<div className="center bg-gradient-to-r from-cyan-700 to-blue-800 max-w-8xl  p-16  gap-8 " >
+    <div className="center max-h-8xl max-w-xl items-center"> 
  
-<h1 className="text-white  max-w-xs p-7 text-left">
+ 
+<h1 className="text-white text-center text-b py-8 gap-2">
     Welcome to Akash Institute 
 </h1>
 
-<div className="  border-red-600 w-16 border-2  "> </div>
+<img src="/imgs/about.png"></img>
 
-
-
+<div className="max-w-8xl text-center text-white text-4xl gap-6 py-4" >   
+Accelerate your IT career with industry in-demand courses
+</div>
+</div>
 </div>
 </>
 
