@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { useRouter } from "next/router";
 import { Header, Paragraph } from "../components/commonComponent/commonSIze";
 import SizeComponent from "../components/commonComponent/sizeComponent";
 
@@ -125,9 +127,8 @@ export default function Home() {
               Experienced Trainers
             </h3>
             <p className="text-zinc-700 text-base text-center">
-              Our institute well-known 
-              Because of our expert and experienced trainers, they have lots of
-              technical knowledge.
+              Our institute well-known Because of our expert and experienced
+              trainers, they have lots of technical knowledge.
             </p>
           </div>
         </div>
@@ -138,58 +139,42 @@ export default function Home() {
             <Header>Popular Courses We Offer</Header>
             <Paragraph>
               Akash Institute of Education offers a wide range of Computer
-              courses. find the best and most popular course for you.
-              Thousands of students have benefited from our computer courses.
+              courses. find the best and most popular course for you. Thousands
+              of students have benefited from our computer courses.
             </Paragraph>
           </div>
           <div className="grid max-w-6xl mx-auto sm:grid-cols-2 grid-cols-1 md:grid-cols-3 gap-8">
             <Card
-              identity="Intermidiate"
-              duration="4-6 Week"
-              title="Software Development"
-              desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              link="/course/diploma-in-computer-application"
+              level="Intermidiate"
+              duration="6-12 Months"
+              title="Diploma in Computer Applications"
+              desc="Diploma in Computer Application (DCA) is designed for SSC+ students"
               image="/course/course1.jpeg"
             />
             <Card
-              identity="Beginner"
+              link="/course/desktop-publishing-courses"
+              level="Beginner"
               duration="Short"
-              title="Web And Graphic Design"
-              desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              title="Desktop Publishing Courses"
+              desc=" PGDCA extensively deals with the theoretical and practical aspects of Computer Softwares"
               image="/course/course3.jpeg"
             />
 
             <Card
-              identity="Beginner"
-              duration="Short"
-              title="Hardware And Networking"
-              desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              link="/course/accounting"
+              level="Intermediate"
+              duration="1 Year"
+              title="Accounting"
+              desc="Akash Institute aims to develop student into a complete accountant, working on accounting related software on computers."
               image="/course/course4.jpeg"
             />
-            <Card
-              identity="Beginner"
-              duration="Short"
-              title="Software Development"
-              desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-              image="/course/course1.jpeg"
-            />
-            <Card
-              identity="Intermidiate"
-              duration="2 week Week"
-              title="Finantial Accounting with GST"
-              desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-              image="/course/course5.jpeg"
-            />
-            <Card
-              identity="Beginner"
-              duration="Short"
-              title="Basic Computer Course"
-              desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-              image="/course/course2.jpeg"
-            />
           </div>
-          <button className="bg-blue-600 mx-auto hover:blue-500 py-3 px-5 rounded-full max-w-max text-white font-bold">
-            View All Course
-          </button>
+          <Link href="/courses">
+            <a className="bg-blue-600 mx-auto hover:blue-500 py-3 px-5 rounded-full max-w-max text-white font-bold">
+              View All Course
+            </a>
+          </Link>
         </div>
       </SizeComponent>
       <div className="bg-blue-800 bg-[url('/imgs/bg.svg')] bg-cover bg-center py-20 md:py-32 px-5   w-full">
@@ -270,9 +255,14 @@ export default function Home() {
   );
 }
 
-function Card(props) {
+export function Card(props) {
+  const router = useRouter();
+  console.log(props.title)
   return (
-    <div className="hover:-translate-y-2 transition-all duration-150 ease-in hover:shadow-300/40 rounded-xl shadow-xl shadow-200/30">
+    <div
+      onClick={() => router.push(`/course/${props.title.split(" ").join("-").toLowerCase()}`)}
+      className="hover:-translate-y-2 cursor-pointer transition-all duration-150 ease-in hover:shadow-300/40 rounded-xl shadow-xl shadow-200/30"
+    >
       <div className=" h-[200px] w-full">
         <img
           src={props.image}
@@ -283,37 +273,51 @@ function Card(props) {
 
       <div className="flex flex-col gap-3 p-6">
         <div className="flex gap-2 items-center">
-          <span className="text-base flex gap-2 items-center">
-            <div
-              className={` max-w-max capitalize text-zinc-800  p-2 rounded-full ${
-                props.identity === "Intermidiate"
-                  ? "bg-red-300"
-                  : "bg-green-500"
-              }`}
-            ></div>
-            {props.identity}
+          <span className="text-base whitespace-nowrap text-zinc-800 flex gap-2 items-center">
+            <div>
+              {props.level === "Intermidiate" ? (
+                <img
+                  src="/course/intermidiate.png"
+                  alt="intermidiate"
+                  className="w-5 h-5"
+                />
+              ) : props.level === "Expert" ? (
+                <img
+                  src="/course/expert.png"
+                  alt="expert"
+                  className="w-5 h-5"
+                />
+              ) : (
+                <img
+                  src="/course/beginner.png"
+                  alt="beginner"
+                  className="w-5 h-5"
+                />
+              )}
+            </div>
+            {props.level}
           </span>
-          <span className="text-base text-zinc-700 flex gap-1 items-center">
+          <span className="text-base whitespace-nowrap  text-zinc-800 flex gap-1 items-center">
             <svg
-              height="22"
-              className="fill-zinc-400 stroke-zinc-100"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              width="24"
-              xmlns="http://www.w3.org/2000/svg"
+              className="w-6 h-6 fill-zinc-400"
+              id="Layer_1"
+              version="1.1"
+              viewBox="0 0 512 512"
             >
-              <circle cx="12" cy="12" r="10" />
-              <polyline points="12 6 12 12 16 14" />
+              <g id="Layer_2">
+                <path d="M363.75,148.75c-59.23-59.22-155.27-59.22-214.5,0c-59.22,59.23-59.22,155.27,0,214.5   c59.23,59.22,155.27,59.22,214.5,0C422.97,304.02,422.97,207.98,363.75,148.75z M318.21,330.31   C305.96,323.24,239.59,285,239.59,285H239c0,0,0-110.71,0-126s24-15.84,24,0s0,111.63,0,111.63s52.31,29.69,67.21,38.811   C345.111,318.56,330.46,337.39,318.21,330.31z" />
+              </g>
+              <g id="Layer_7">
+                <g id="Layer_9" />
+              </g>
             </svg>
             {props.duration}
           </span>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="md:text-2xl font-semibold text-xl ">{props.title}</h3>
-          <p>{props.desc}</p>
+          <h3 className="md:text-xl font-semibold text-xl ">{props.title}</h3>
+          <p className="text-zinc-600">{props.desc}</p>
         </div>
       </div>
     </div>

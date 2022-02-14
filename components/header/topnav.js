@@ -70,28 +70,32 @@ export default function TopNav() {
               </Link>
             </li>
             <li className="py-2">
-              <Link href="/">
+              <Link href="/Aboutus">
                 <a className="hover:text-blue-500 font-semibold rounded-full hover:shadow-lg hover:bg-white py-1 px-5 text-lg cursor-pointer">
                   About
                 </a>
               </Link>
             </li>
             <li className="relative group py-1">
-              <span className="py-1 font-semibold rounded-full px-5 text-lg flex gap-1 items-center transition-colors duration-150 cursor-pointer ease-linear">
-                Courses
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 transform group-hover:rotate-180 duration-150 ease-in"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </span>
+              <Link href="/courses">
+                <a>
+                  <span className="py-1 font-semibold rounded-full px-5 text-lg flex gap-1 items-center transition-colors duration-150 cursor-pointer ease-linear">
+                    Courses
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5 transform group-hover:rotate-180 duration-150 ease-in"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </Link>
               <ul className="tooltiparrow shadow-xl text-zinc-800 group-hover:opacity-100 group-hover:visible invisible opacity-0  absolute z-10 w-[220px] top-full left-0 bg-white rounded-xl p-4">
                 <li className="py-2 hover:text-blue-500 cursor-pointer">
                   <Link href="/">

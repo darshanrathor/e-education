@@ -28,9 +28,19 @@ export default function Contact() {
         </div>
         <div className="md:px-0 pt-10 md:pt-16 pb-24">
           <div className="  max-w-6xl w-full mx-auto">
-            <div className="flex gap-10 md:gap-20 px-5 md:flex-row flex-col ">
-              <div className="bg-white mt-10 border border-blue-200 p-5 md:p-3 max-w-lg w-full mx-auto rounded-[20px] shadow-lg">
-                <form className="flex rounded-xl flex-col md:bg-blue-50   w-full gap-10 md:py-8 md:px-7">
+            <div className="flex px-10 md:flex-row flex-col mb-12 divide-zinc-300  md:divide-x gap-x-16 max-w-4xl mx-auto items-start md:items-center">
+              <div className="md:max-w-xs w-full">
+                <span>#Contact</span>
+                <h2>Get in touch with us</h2>
+              </div>
+              <p className=" w-full md:pl-14 py-3 text-lg leading-7">
+                Let us know what you want to know. We want to help people learn,
+                grow and achieve more in life.
+              </p>
+            </div>
+            <div className="flex gap-10 md:gap-40 px-5 md:flex-row flex-col ">
+              <div className="bg-white mt-10 border border-indigo-200 p-5 md:p-3 max-w-lg w-full mx-auto rounded-[20px] shadow-lg">
+                <form className="flex rounded-xl flex-col md:bg-indigo-50   w-full gap-10 md:py-8 md:px-7">
                   <h4 className="font-cera_bold text-zinc-800 ">
                     Ready to Get Started?
                   </h4>
@@ -45,7 +55,7 @@ export default function Contact() {
                         formError.name && formValue.name === ""
                           ? "border-red-500"
                           : "border-zinc-500"
-                      } focus:border-zinc-800  pt-3 pb-2   `}
+                      } focus:border-indigo-700  pt-3 pb-2   `}
                       placeholder=" "
                     />
                     <label
@@ -66,7 +76,7 @@ export default function Contact() {
                         formError.name && formValue.name === ""
                           ? "border-red-500"
                           : "border-zinc-500"
-                      } focus:border-zinc-800 pt-3 pb-2   `}
+                      } focus:border-indigo-700 pt-3 pb-2   `}
                       placeholder=" "
                     />
                     <label
@@ -86,7 +96,7 @@ export default function Contact() {
                         formError.name && formValue.name === ""
                           ? "border-red-500"
                           : "border-zinc-500"
-                      } focus:border-zinc-800  outline-none  pt-3 pb-2    `}
+                      } focus:border-indigo-700  outline-none  pt-3 pb-2    `}
                       placeholder=" "
                     />
                     <label
@@ -101,37 +111,55 @@ export default function Contact() {
                   </button>
                 </form>
               </div>
-              <div className="bg-white py-10 my-auto px-5 md:p-10 text-left rounded-[20px] w-full flex flex-col  gap-14">
-                <div className="flex gap-8 border transition duration-150 ease-in group hover:bg-blue-700 hover:txt-white  border-blue-700 items-center p-6 rounded-[20px]">
-                  <div className="bg-blue-700  rounded-full p-2 ">
+              <div className="bg-white mx-auto max-w-sm backgroundeffect shadow-2xl py-10 my-auto px-5 md:px-12 md:py-14 text-left rounded-[10px] w-full flex flex-col  gap-10 items-center">
+                <div className="w-full">
+                  <h5 className="group-hover:text-white items-center flex gap-4">
                     <svg
-                      className="w-8 h-8 fill-white rounded-full"
+                      className="w-6 h-6 fill-blue-700 rounded-full"
                       viewBox="0 0 32 32"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <g data-name="Layer 21" id="Layer_21">
                         <path
-                          class="cls-1"
+                          className="cls-1"
                           d="M16,31a3,3,0,0,1-2.21-1C10.14,26,4,18.39,4,13.36A12.19,12.19,0,0,1,16,1,12.19,12.19,0,0,1,28,13.36c0,5-6.14,12.59-9.79,16.65A3,3,0,0,1,16,31ZM16,3A10.2,10.2,0,0,0,6,13.36c0,3.14,3.47,8.86,9.28,15.31a1,1,0,0,0,1.44,0C22.53,22.22,26,16.5,26,13.36A10.2,10.2,0,0,0,16,3Z"
                         />
                         <path
-                          class="cls-1"
+                          className="cls-1"
                           d="M16,19a6,6,0,1,1,6-6A6,6,0,0,1,16,19ZM16,9a4,4,0,1,0,4,4A4,4,0,0,0,16,9Z"
                         />
                       </g>
                     </svg>
-                  </div>
-                  <div>
-                    <h4 className="group-hover:text-white">Our Address</h4>
-                    <p className="mt-1 group-hover:text-white md:text-lg">
-                      2750 Quadra Street Victoria Road, New York, Canada
-                    </p>
-                  </div>
+                    Address
+                  </h5>
+                  <p className="mt-1 max-w-xs ml-10 group-hover:text-white md:text-lg">
+                  Bangara Bazar Road , Nawada Chauraha , Deoria 
+                  </p>
                 </div>
-                <div className="flex gap-8 border transition duration-150 ease-in group hover:bg-blue-700 hover:txt-white  border-blue-700 items-center p-6 rounded-[20px]">
-                  <div className="bg-blue-700  rounded-full p-2 ">
+
+                <div className="w-full">
+                  <h5 className="group-hover:text-white items-center flex gap-4">
                     <svg
-                      className="w-8 h-8 fill-white"
+                      className="w-6 h-6 fill-blue-700"
+                      viewBox="0 0 48 48"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title />
+                      <g data-name="8-Email" id="_8-Email">
+                        <path d="M45,7H3a3,3,0,0,0-3,3V38a3,3,0,0,0,3,3H45a3,3,0,0,0,3-3V10A3,3,0,0,0,45,7Zm-.64,2L24,24.74,3.64,9ZM2,37.59V10.26L17.41,22.17ZM3.41,39,19,23.41l4.38,3.39a1,1,0,0,0,1.22,0L29,23.41,44.59,39ZM46,37.59,30.59,22.17,46,10.26Z" />
+                      </g>
+                    </svg>
+                    Email{" "}
+                  </h5>
+                  <p className="mt-1 ml-10 group-hover:text-white md:text-lg">
+                  rrshah@circlip.net
+                  </p>
+                </div>
+
+                <div className="w-full ">
+                  <h5 className="group-hover:text-white items-center flex gap-4">
+                    <svg
+                      className="w-6 h-6 fill-blue-700"
                       viewBox="0 0 512 512"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -142,15 +170,93 @@ export default function Contact() {
                         <path d="M428.15,269.73a15,15,0,0,1-15-15c0-89.69-73-162.66-162.65-162.66a15,15,0,0,1,0-30c106.23,0,192.65,86.43,192.65,192.66A15,15,0,0,1,428.15,269.73Z" />
                       </g>
                     </svg>
-                  </div>
-                  <div>
-                    <h4 className="group-hover:text-white">Contact</h4>
-                    <p className="mt-1 group-hover:text-white md:text-lg">
-                      Mobile: (+91)8356037560
-                    </p>
-                    <p className="mt-1 group-hover:text-white md:text-lg">
-                      info@example.com
-                    </p>
+                    Phone{" "}
+                  </h5>
+                  <p className="mt-1 ml-10 group-hover:text-white md:text-lg">
+                    Mobile: (+91)8356037560
+                  </p>
+                </div>
+                <div className="flex w-full flex-col gap-5">
+                  <h6>Follow Us</h6>
+                  <div className="flex gap-5 ">
+                    <a
+                      href="/"
+                      className="p-2 group hover:bg-indigo-600 bg-indigo-100 rounded-md"
+                    >
+                      <svg
+                        className="group-hover:fill-white fill-indigo-600 w-6 h-6"
+                        enableBackground="new 0 0 56.693 56.693"
+                        id="Layer_1"
+                        version="1.1"
+                        viewBox="0 0 56.693 56.693"
+                      >
+                        <path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z" />
+                      </svg>
+                    </a>
+                    <a
+                      href="/"
+                      className="p-2 group hover:bg-rose-500 bg-fuchsia-100 rounded-md"
+                    >
+                      <svg
+                        className="fill-rose-500 group-hover:fill-white w-6 h-6"
+                        version="1.1"
+                        id="Layer_1"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 56.7 56.7"
+                        enableBackground="new 0 0 56.7 56.7"
+                      >
+                        <g>
+                          <path
+                            d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
+		c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z"
+                          />
+                          <circle cx="41.5" cy="16.4" r="2.9" />
+                          <path
+                            d="M49,8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7,0-14.5,5.8-14.5,14.5v20.5c0,4.3,1.4,8,4.2,10.7c2.7,2.6,6.3,3.9,10.4,3.9
+		h20.4c4.3,0,7.9-1.4,10.5-3.9c2.7-2.6,4.1-6.3,4.1-10.6V19.3C53,15.1,51.6,11.5,49,8.9z M48.6,39.9c0,3.1-1.1,5.6-2.9,7.3
+		s-4.3,2.6-7.3,2.6H18c-3,0-5.5-0.9-7.3-2.6C8.9,45.4,8,42.9,8,39.8V19.3c0-3,0.9-5.5,2.7-7.3c1.7-1.7,4.3-2.6,7.3-2.6h20.6
+		c3,0,5.5,0.9,7.3,2.7c1.7,1.8,2.7,4.3,2.7,7.2V39.9L48.6,39.9z"
+                          />
+                        </g>
+                      </svg>
+                    </a>
+                    <a
+                      href="/"
+                      className="p-2 group hover:bg-sky-400 bg-sky-100 rounded-md"
+                    >
+                      <svg
+                        className="fill-sky-500 group-hover:fill-white w-6 h-6"
+                        enableBackground="new 0 0 56.693 56.693"
+                        id="Layer_1"
+                        version="1.1"
+                        viewBox="0 0 56.693 56.693"
+                      >
+                        <path d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z" />
+                      </svg>
+                    </a>
+                    <a
+                      href="/"
+                      className="p-2 group hover:bg-green-400 bg-green-100 rounded-md"
+                    >
+                      <svg
+                        className="fill-green-500 group-hover:fill-white w-6 h-6 "
+                        id="Layer_1"
+                        version="1.1"
+                        viewBox="0 0 56.693 56.693"
+                      >
+                        <g>
+                          <path
+                            className="st0"
+                            d="M46.3802,10.7138c-4.6512-4.6565-10.8365-7.222-17.4266-7.2247c-13.5785,0-24.63,11.0506-24.6353,24.6333   c-0.0019,4.342,1.1325,8.58,3.2884,12.3159l-3.495,12.7657l13.0595-3.4257c3.5982,1.9626,7.6495,2.9971,11.7726,2.9985h0.01   c0.0008,0-0.0006,0,0.0002,0c13.5771,0,24.6293-11.0517,24.635-24.6347C53.5914,21.5595,51.0313,15.3701,46.3802,10.7138z    M28.9537,48.6163h-0.0083c-3.674-0.0014-7.2777-0.9886-10.4215-2.8541l-0.7476-0.4437l-7.7497,2.0328l2.0686-7.5558   l-0.4869-0.7748c-2.0496-3.26-3.1321-7.028-3.1305-10.8969c0.0044-11.2894,9.19-20.474,20.4842-20.474   c5.469,0.0017,10.6101,2.1344,14.476,6.0047c3.8658,3.8703,5.9936,9.0148,5.9914,14.4859   C49.4248,39.4307,40.2395,48.6163,28.9537,48.6163z"
+                          />
+                          <path
+                            className="st0"
+                            d="M40.1851,33.281c-0.6155-0.3081-3.6419-1.797-4.2061-2.0026c-0.5642-0.2054-0.9746-0.3081-1.3849,0.3081   c-0.4103,0.6161-1.59,2.0027-1.9491,2.4136c-0.359,0.4106-0.7182,0.4623-1.3336,0.1539c-0.6155-0.3081-2.5989-0.958-4.95-3.0551   c-1.83-1.6323-3.0653-3.6479-3.4245-4.2643c-0.359-0.6161-0.0382-0.9492,0.27-1.2562c0.2769-0.2759,0.6156-0.7189,0.9234-1.0784   c0.3077-0.3593,0.4103-0.6163,0.6155-1.0268c0.2052-0.4109,0.1027-0.7704-0.0513-1.0784   c-0.1539-0.3081-1.3849-3.3379-1.8978-4.5706c-0.4998-1.2001-1.0072-1.0375-1.3851-1.0566   c-0.3585-0.0179-0.7694-0.0216-1.1797-0.0216s-1.0773,0.1541-1.6414,0.7702c-0.5642,0.6163-2.1545,2.1056-2.1545,5.1351   c0,3.0299,2.2057,5.9569,2.5135,6.3676c0.3077,0.411,4.3405,6.6282,10.5153,9.2945c1.4686,0.6343,2.6152,1.013,3.5091,1.2966   c1.4746,0.4686,2.8165,0.4024,3.8771,0.2439c1.1827-0.1767,3.6419-1.489,4.1548-2.9267c0.513-1.438,0.513-2.6706,0.359-2.9272   C41.211,33.7433,40.8006,33.5892,40.1851,33.281z"
+                          />
+                        </g>
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </div>

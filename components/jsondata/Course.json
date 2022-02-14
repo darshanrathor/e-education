@@ -1,0 +1,89 @@
+[
+  {
+    "Course_name": "DCA",
+    "Course_title": "Diploma in Computer Applications",
+    "post_url": "DCA",
+    "Duration": "6-12 Months",
+    "Level": "Intermidiate",
+    "Course_desription": " Diploma in Computer Application (DCA) is designed for SSC+ students to acquire knowledge in the field of basic ,computer applications,computerised accounting, graphic designing and web designin . On completion of DCA the student would be able to work at different levels in organisations who require these minimum skill sets for employment. The student would be given assignments and projects during the program",
+    "Career Opportunities": "Data Entry Operator, Tally Operator, Account Assistant, Faculty, Lab Instructor, DTP Operator, Creative Executive, Layout Designer, Printing & Designing Head, Web Designer, Web Site Tester, Website Layout Designer, Work as a Freelancer. Junior Programmer, Desktop Application Developer, Work as a Freelancer."
+  },
+  {
+    "Course_name": "PGDCA",
+    "Course_title": "Programming  post graduate diploma course",
+    "post_url": "PGDCA",
+    "Duration": "1 Year",
+    "Level": "Intermidiate",
+    "Course_desription": " PGDCA extensively deals with the theoretical and practical aspects of Computer Softwares and their applications. PGDCA courses focus on imparting knowledge to its students on various subjects like Database Management System, Operating System and Web ",
+
+    "PGDCA: Jobs & Salary": " After successfully completing PGDCA courses students are offered job profiles like Information Technology Manager, Business Development Manager, Senior Analyst etc. The average starting salary that is received post completing PGDCA courses range between INR 2 - 4 LPA"
+  },
+
+  {
+    "Course_name": "DTP",
+    "Course_title": "Desktop Publishing Courses",
+    "post_url": "DTP",
+    "Duration": "Short",
+    "Level": "Beginner",
+    "Course_desription": "Make Your Bright Future in Graphic Designing",
+    "Course_description 1": "Desktop Publishing Courses deals with educating the students about the use of software for designing and creation of different types of documents. These Courses are often available as offline and online courses and sometimes may be found as a part of the graphic designing programs."
+  },
+
+  {
+    "Course_name": "ADCA",
+    "Course_title": "Advanced Diploma In Computer Application course",
+    "post_url": "ADCA",
+    "Duration": "1 Year",
+    "Level": "Intermidiate",
+    "Course_desription": "ADCA is a Diploma course in Computer Application. The main aim of The Advance Diploma In Computer Application program To prepare candidates in such a way that they can present and able to work in the world of computers and software. This course helps to provide information related to technologies and research which is carried out in the field of computer application.",
+    "Course_description 1": "The ADCA full form is Advanced Diploma In Computer Application course. Includes both theoretical as well as practical aspects so that it can provide information about the latest computer-related developments. The candidates also learn about designing and developing applications and system software which may be enforced in businesses or the corporate sector."
+  },
+
+  {
+    "Course_name": "Typing ",
+    "Course_title": "Typing",
+    "post_url": "Typing ",
+    "Duration": "Short",
+    "Level": "Beginner",
+    "Course_desription": "Typing courses are offered through certificate programs, but they can also be offered in some associate's or bachelor's degree programs that offer office technology or administration. Some typing classes are stand-alone courses that are not taken for credit"
+  },
+
+  {
+    "Course_name": "Accounting  ",
+    "Course_title": "Accounting",
+    "post_url": "Accounting ",
+    "Duration": "1 Year",
+    "Level": "Intermidiate",
+    "Course_desription": "Akash Institute aims to develop student into a complete accountant, working on accounting related software on computers. This program basically caters to Commerce graduates as well as people who are interested to make career in computerized accounting. The minimum qualification required for enrollment in this program is HSC. The program has modular pattern of teaching and examination. On successful completion of SPA the student would be awarded final certification. Student has to appear for MBTB examinations by paying examination fees as prescribed from time to time for all modules",
+    "Career Opportunities": "Professional Corporate Accountants, Tally Professional, Account Assistant, Tax Process Executive, Teaching Professional for Tally and Taxations, Jobs in Stock Market, Self Employment in Tally - GST Work. RCPA give Career readiness for Accounting and Finance Industry."
+  },
+
+  {
+    "Course_name": "Fundamentals  ",
+    "Course_title": "Desktop Publishing Courses",
+    "post_url": "Fundamentals ",
+    "Duration": "1 Year",
+    "Level": "Intermidiate",
+    "Course_desription": "Akash Institute aims to develop student into a complete accountant, working on accounting related software on computers. This program basically caters to Commerce graduates as well as people who are interested to make career in computerized accounting. The minimum qualification required for enrollment in this program is HSC. The program has modular pattern of teaching and examination. On successful completion of SPA the student would be awarded final certification. Student has to appear for MBTB examinations by paying examination fees as prescribed from time to time for all modules"
+  },
+
+  {
+    "Course_name": "Spoken English   ",
+    "Course_title": "Spoken English",
+    "post_url": "Spoken English  ",
+    "Duration": "Short",
+    "Level": "Beginner",
+    "Course_desription": "Being confident with your English can enhance your life in so many ways. It can improve your social life, career prospects, and can help you to explore the world more freelty",
+    "Course_description1": "In our classes, you will participate in activities that will improve your ability to speak naturally and confidently. With lessons based on real-life topics, you will talk, practise and improve your fluency and accuracy. Our highly qualified teachers will help you achieve your goals through live online classes and activity-based learning. The course curriculum consists of extensive speaking practice, strategies, and techniques for effective communication."
+  },
+
+  {
+    "Course_name": "CCC  ",
+    "Course_title": "Course on Computer Concepts",
+    "post_url": " Course on Computer Concepts  ",
+    "Duration": "1 Year",
+    "Level": "Expert",
+    "Course_desription": "This course is designed to aim at imparting a basic level IT Literacy programme for the common man. This programme has essentially been conceived with an idea of giving an opportunity to the common man to attain computer literacy thereby contributing to increased and speedy PC penetration in different walks of life. After completing the course the incumbent should be able to the use the computer for basic purposes of preparing his personnel/business letters, viewing information on internet (the web), receiving and sending mails, preparing his business presentations, preparing small databases etc.",
+    "Course_description1": "This helps the small business communities, housewives, etc. to maintain their small accounts using the computers and enjoy in the world of Information Technology. This course is, therefore, designed to be more practical oriented."
+  }
+]
