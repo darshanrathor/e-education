@@ -1,17 +1,48 @@
 import React, { useState } from "react";
-import { Paragraph } from "../components/commonComponent/commonSIze";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 export default function Contact() {
-  const [formValue, setformValue] = useState({
+  const initialvalue = {
     name: "",
     email: "",
     message: "",
-  });
+  };
+  const [formValue, setformValue] = useState(initialvalue);
+  const [error, seterror] = useState(null);
   const [formError, setformError] = useState({
     name: "",
     email: "",
     message: "",
   });
+
+  if (error) {
+    setTimeout(() => seterror(null), 2000);
+  }
+
+  const notify = () =>
+    toast.success("Your message has been send", { theme: "colored" });
+
+  const handleForm = (e) => {
+    e.preventDefault();
+    if (
+      (formValue.name !== "" && formValue.nmessageame !== "") ||
+      formValue.email !== ""
+    ) {
+      fetch(
+        "https://0z5scqbk6c.execute-api.ap-south-1.amazonaws.com/default/e-education",
+        {
+          method: "post",
+          // headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formValue),
+        }
+      ).then((res) => {
+        notify();
+        setformValue(initialvalue);
+      });
+    } else {
+      seterror("All detailed must be filed");
+    }
+  };
 
   const handleInput = (e) => {
     const { name, value } = e.target;
@@ -19,7 +50,8 @@ export default function Contact() {
   };
 
   return (
-    <div>
+    <>
+      <ToastContainer />
       <div className="  ">
         <div className=" pb-28 pt-32 md:pt-36 md:pb-32  bg-[url('/imgs/contact.jpg')] bg-cover bg-center w-full ">
           <h4 className="max-w-7xl px-5 mx-auto md:text-4xl text-white font-cera_medium text-3xl">
@@ -40,7 +72,10 @@ export default function Contact() {
             </div>
             <div className="flex gap-10 md:gap-40 px-5 md:flex-row flex-col ">
               <div className="bg-white mt-10 border border-indigo-200 p-5 md:p-3 max-w-lg w-full mx-auto rounded-[20px] shadow-lg">
-                <form className="flex rounded-xl flex-col md:bg-indigo-50   w-full gap-10 md:py-8 md:px-7">
+                <form
+                  onSubmit={handleForm}
+                  className="flex rounded-xl flex-col md:bg-indigo-50   w-full gap-10 md:py-8 md:px-7"
+                >
                   <h4 className="font-cera_bold text-zinc-800 ">
                     Ready to Get Started?
                   </h4>
@@ -106,6 +141,11 @@ export default function Contact() {
                       Message:
                     </label>
                   </div>
+                  {error !== null && (
+                    <span className="py-2 px-6 text-red-500 border-red-500 font-semibold border-l-4 bg-red-50">
+                      {error}
+                    </span>
+                  )}
                   <button className="bg-zinc-900 px-10 py-2.5 transition duration-150  max-w-[200px] hover:bg-zinc-800 hover:scale-[1.05]  rounded-md font-cera_medium text-base text-white">
                     Send Enquiry
                   </button>
@@ -133,7 +173,7 @@ export default function Contact() {
                     Address
                   </h5>
                   <p className="mt-1 max-w-xs ml-10 group-hover:text-white md:text-lg">
-                  Bangara Bazar Road , Nawada Chauraha , Deoria 
+                    Bangara Bazar Road , Nawada Chauraha , Deoria
                   </p>
                 </div>
 
@@ -152,7 +192,7 @@ export default function Contact() {
                     Email{" "}
                   </h5>
                   <p className="mt-1 ml-10 group-hover:text-white md:text-lg">
-                  rrshah@circlip.net
+                    rrshah@circlip.net
                   </p>
                 </div>
 
@@ -264,6 +304,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

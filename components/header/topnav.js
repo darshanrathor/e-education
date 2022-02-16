@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import MobilemenuContent from "./mobilemenuContent";
 
 export default function TopNav() {
   const [diaplsymenu, setdisplaymenu] = useState(false);
   const [y, sety] = useState(false);
+  const [mouted, setmouted] = useState(false);
 
   if (typeof document !== "undefined") {
     const body = document.getElementsByTagName("body")[0];
@@ -19,23 +21,29 @@ export default function TopNav() {
     }
   }
   useEffect(() => {
-    window.addEventListener("scroll", (e) => handleNavigation(e));
-    const handleNavigation = (e) => {
-      const window1 = e.currentTarget;
-      const scroll = window1.pageYOffset || document.documentElement.scrollTop;
-      if (scroll > 100) {
-        sety(true);
-      } else {
-        sety(false);
-      }
-    };
+    setmouted(true);
+    if (mouted) {
+      window.addEventListener("scroll", (e) => handleNavigation(e));
+      const handleNavigation = (e) => {
+        const window1 = e.currentTarget;
+        const scroll =
+          window1.pageYOffset || document.documentElement.scrollTop;
+        if (scroll > 100) {
+          sety(true);
+        } else {
+          sety(false);
+        }
+      };
+    }
     return () => {
       window.removeEventListener("scroll", handleNavigation);
+      setmouted(false);
     };
-  }, []);
+  }, [mouted]);
   const handleclose = () => {
     setdisplaymenu((prev) => !prev);
   };
+  const router = useRouter();
   return (
     <>
       {diaplsymenu && <MobilemenuContent passclose={handleclose} />}
@@ -51,7 +59,7 @@ export default function TopNav() {
                 <Image
                   layout="fill"
                   objectFit="contain"
-                  src="/imgs/logo.png"
+                  src="/imgs/log.png"
                   alt="logo"
                 />
               </a>
@@ -77,25 +85,23 @@ export default function TopNav() {
               </Link>
             </li>
             <li className="relative group py-1">
-              <Link href="/courses">
-                <a>
-                  <span className="py-1 font-semibold rounded-full px-5 text-lg flex gap-1 items-center transition-colors duration-150 cursor-pointer ease-linear">
-                    Courses
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 transform group-hover:rotate-180 duration-150 ease-in"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </Link>
+              <button onClick={() => router.push("/courses")}>
+                <span className="  py-1 px-5 font-semibold rounded-full text-lg flex gap-1 items-center transition-colors duration-150 cursor-pointer ease-linear">
+                  Courses
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 transform group-hover:rotate-180 duration-150 ease-in"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </span>
+              </button>
               <ul className="tooltiparrow shadow-xl text-zinc-800 group-hover:opacity-100 group-hover:visible invisible opacity-0  absolute z-10 w-[220px] top-full left-0 bg-white rounded-xl p-4">
                 <li className="py-2 hover:text-blue-500 cursor-pointer">
                   <Link href="/">
@@ -188,16 +194,9 @@ export default function TopNav() {
               </span>
               <ul className="tooltiparrow shadow-xl text-zinc-800 group-hover:opacity-100 group-hover:visible invisible opacity-0 absolute z-10 w-[130px] top-full left-0 bg-white rounded-xl p-4">
                 <li className="py-2 hover:text-blue-500 cursor-pointer">
-                  <Link href="/">
+                  <Link href="/gallery">
                     <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
                       Photo(s)
-                    </a>
-                  </Link>
-                </li>
-                <li className="py-2 hover:text-blue-500 cursor-pointer">
-                  <Link href="/">
-                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
-                      Video(s)
                     </a>
                   </Link>
                 </li>

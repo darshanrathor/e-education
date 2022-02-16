@@ -3,7 +3,7 @@ export default function Aboutus(){
         <>
         
 
-<div className="center bg-[url('/imgs/50.jpeg')] max-w-8xl  p-16  gap-8  " >
+<div className="bg-blue-800 bg-[url('/imgs/50.jpeg')] bg-cover bg-center py-20 md:py-32 px-5   w-full " >
     <div className="center    max-h-8xl max-w-xl mx-auto items-center"> 
  
  

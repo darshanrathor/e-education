@@ -55,7 +55,7 @@ export default function Footer() {
               You can be your own Guiding star with our help
             </h2>
             <Link href="/contact">
-              <a className="bg-white max-w-[180px] whitespace-nowrap py-3.5 font-semibold sm:text-lg px-10 my-auto rounded-md hover:shadow-2xl">
+              <a className="bg-white max-w-[180px] whitespace-nowrap py-3.5 font-semibold sm:text-lg px-10 my-auto shadow-zinc-100 rounded-md hover:shadow-2xl">
                 Get Started
               </a>
             </Link>
@@ -65,13 +65,14 @@ export default function Footer() {
       <div className="   grid gap-x-14 gap-y-10 grid-cols-1  md:grid-cols-6  max-w-6xl mx-auto md:pb-0 pb-20">
         <div className="flex flex-col gap-5 cursor-default w-full md:col-span-2">
           <div className="h-[80px]">
-            <img src="/imgs/logo.png" alt="logo" className="h-full" />
+            <img src="/imgs/log.png" alt="logo" className="h-full" />
           </div>
           <p className="text-base text-zinc-300 leading-6">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book{" "}
+            Akash institute offers a variety of courses – technology courses for
+            IT students, career programs for students wanting to enter the IT
+            sector, certification courses for IT professionals to enhance their
+            career and basic IT programs for school students, housewives/senior
+            citizens etc.{" "}
           </p>
           <div className="flex gap-6 mt-2 ">
             <a
@@ -180,7 +181,7 @@ export default function Footer() {
                 </g>
               </svg>
               <p className="text-zinc-300 tetx-sm md:max-w-[230px]">
-                Bangara Bazar Road , Nawada Chauraha , Deoria 
+                Bangara Bazar Road , Nawada Chauraha , Deoria
               </p>
             </span>
             <span className="flex gap-3 items-center text-zinc-300">

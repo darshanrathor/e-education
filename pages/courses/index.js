@@ -13,11 +13,9 @@ export default function Index() {
       setoursedata(courses);
     } else if (select2 === "alll") {
       const c = courses.filter((item) => item.Level === select);
-      console.log(c);
       setoursedata(c);
     } else if (select === "all") {
       const c = courses.filter((item) => item.Duration === select2);
-      console.log(c);
       setoursedata(c);
     } else if (select !== "all" && select2 !== "alll") {
       const c = courses.filter(
@@ -47,7 +45,21 @@ export default function Index() {
 
   return (
     <>
-      <div className="bg-blue-600 py-40 bg-[url('/imgs/courses.png')] bg-contain bg-no-repeat bg-center w-full"></div>
+      <div className="    w-full">
+        <div className="backgroundgradient h-[450px] bg-[url('/course/banner.jpeg')] bg-cover bg-center w-full">
+          <div className="relative flex flex-col gap-5 z-[2] px-5 top-1/2 -translate-y-1/2 max-w-7xl mx-auto w-full ">
+            <h1 className="text-white">Courses</h1>
+            <div className="flex gap-3  items-center pl-1">
+              <span className="text-zinc-300">Home</span>
+              <span className="w-1 h-1 rounded-full bg-white "></span>
+              <span className="text-white">Courses</span>
+            </div>
+          </div>
+        </div>
+        <div className=" max-w-7xl mx-auto w-full ">
+          <h1 className="text-white">Courses</h1>
+        </div>
+      </div>
       <div className="flex gap-6 sm:flex-row flex-col py-14 max-w-6xl mx-auto items-center px-5">
         <div className="relative w-full max-w-xs sm:w-44 border cursor-pointer border-zinc-400 rounded-xl backgound-white z-[2]">
           <select
@@ -97,7 +109,10 @@ export default function Index() {
         </div>
         <p className="text-lg flex gap-4 items-center">
           {(select !== "all" || select2 !== "alll") && (
-            <span onClick={handlereset} className="text-indigo-700 cursor-pointer text-lg">
+            <span
+              onClick={handlereset}
+              className="text-indigo-700 cursor-pointer text-lg"
+            >
               X
             </span>
           )}
@@ -123,12 +138,11 @@ export default function Index() {
                 level={item.Level}
                 duration={item.Duration}
                 title={item.Course_title}
-                desc={item["Course_desription"].substring(0, 80)}
+                desc={item["Course_desription"]?.substring(0, 80)}
                 image="/course/course2.jpeg"
               />
             ))}
           </div>
-         
         </div>
       )}
     </>

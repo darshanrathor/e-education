@@ -81,3 +81,26 @@ select {
   z-index: -1;
   background-position: left;
 }
+
+.backgroundgradient {
+  position: relative;
+}
+
+.backgroundgradient::after {
+  opacity: 0.9;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  /* z-index: 1; */
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    to right,
+    #8638fc,
+    #7c38fc,
+    #7138fc,
+    #6538fc,
+    #5838fc
+  );
+}
