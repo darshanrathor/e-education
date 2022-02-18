@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 export default function MobilemenuContent(props) {
   const [menu, setmenu] = useState({
     course: false,
     gallery: false,
   });
-
+  const router = useRouter();
   return (
     <>
       <div className="flex md:hidden   bg-white fixed w-full z-30 top-0 left-0 pt-4 flex-col gap-6 px-4 overflow-y-scroll h-full">
@@ -73,70 +74,70 @@ export default function MobilemenuContent(props) {
             } list-disc  text-zinc-600 flex flex-col text-xl gap-4 ml-6`}
           >
             <li className="py-0 hover:text-blue-700 cursor-pointer">
-              <Link href="/">
+              <Link href="/courses/diploma-in-computer-applications">
                 <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
                   DCA
                 </a>
               </Link>
             </li>
             <li className="py-0 hover:text-blue-700 cursor-pointer">
-              <Link href="/">
+              <Link href="/courses/programming-post-graduate-diploma-course">
                 <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
                   PGDCA
                 </a>
               </Link>
             </li>
             <li className="py-0 hover:text-blue-700 cursor-pointer">
-              <Link href="/">
+              <Link href="/courses/desktop-publishing-courses">
                 <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
                   DTP
                 </a>
               </Link>
             </li>
             <li className="py-0 hover:text-blue-700 cursor-pointer">
-              <Link href="/">
-                <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
-                  Accounting
-                </a>
-              </Link>
-            </li>
-            <li className="py-0 hover:text-blue-700 cursor-pointer">
-              <Link href="/">
-                <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
-                  Typing
-                </a>
-              </Link>
-            </li>
-            <li className="py-0 hover:text-blue-700 cursor-pointer">
-              <Link href="/">
-                <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
-                  Fundamentals
-                </a>
-              </Link>
-            </li>
-            <li className="py-0 hover:text-blue-700 cursor-pointer">
-              <Link href="/">
-                <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
-                  DGD
-                </a>
-              </Link>
-            </li>
-            <li className="py-0 hover:text-blue-700 cursor-pointer">
-              <Link href="/">
+              <Link href="/courses/advanced-diploma-in-computer-application-course">
                 <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
                   ADCA
                 </a>
               </Link>
             </li>
             <li className="py-0 hover:text-blue-700 cursor-pointer">
-              <Link href="/">
+              <Link href="/courses/typing">
+                <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                  Typing
+                </a>
+              </Link>
+            </li>
+            <li className="py-0 hover:text-blue-700 cursor-pointer">
+              <Link href="/courses/desktop-publishing-courses">
+                <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                  Fundamentals
+                </a>
+              </Link>
+            </li>
+            <li className="py-0 hover:text-blue-700 cursor-pointer">
+              <Link href="/courses/accounting">
+                <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                  DGD
+                </a>
+              </Link>
+            </li>
+            <li className="py-0 hover:text-blue-700 cursor-pointer">
+              <Link href="/courses/accounting">
+                <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                  Accounting
+                </a>
+              </Link>
+            </li>
+            <li className="py-0 hover:text-blue-700 cursor-pointer">
+              <Link href="/courses/spoken-english">
                 <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
                   Spoken EN
                 </a>
               </Link>
             </li>
             <li className="py-0 hover:text-blue-700 cursor-pointer">
-              <Link href="/">
+              <Link href="/courses/course-on-computer-concepts">
                 <a className="hover:text-blue-700 font-semibold rounded-full px-3 text-lg cursor-pointer">
                   CCC/0'Level
                 </a>
@@ -180,7 +181,10 @@ export default function MobilemenuContent(props) {
           </ul>
         </div>
         <button
-          onClick={() => setmenu((prev) => ({ ...prev, course: !prev.course }))}
+          onClick={() => {
+            setmenu((prev) => ({ ...prev, course: !prev.course }));
+            router.push("/Aboutus");
+          }}
           className=" font-semibold hover:text-blue-700 text-zinc-800  w-full text-left md:text-3xl text-2xl"
         >
           About

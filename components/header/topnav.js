@@ -44,6 +44,8 @@ export default function TopNav() {
     setdisplaymenu((prev) => !prev);
   };
   const router = useRouter();
+  const url = router.asPath.split("/")[1];
+  console.log(url);
   return (
     <>
       {diaplsymenu && <MobilemenuContent passclose={handleclose} />}
@@ -56,12 +58,32 @@ export default function TopNav() {
           <div className="w-[150px]">
             <Link href="/">
               <a className="w-full flex justify-start  h-[60px] relative ">
-                <Image
-                  layout="fill"
-                  objectFit="contain"
-                  src="/imgs/log.png"
-                  alt="logo"
-                />
+                {url === "" ? (
+                  <Image
+                    layout="fill"
+                    objectFit="contain"
+                    src="/imgs/bluelogo.png"
+                    alt="logo"
+                  />
+                ) : (
+                  <>
+                    {y ? (
+                      <Image
+                        layout="fill"
+                        objectFit="contain"
+                        src="/imgs/indigologo.png"
+                        alt="logo"
+                      />
+                    ) : (
+                      <Image
+                        layout="fill"
+                        objectFit="contain"
+                        src="/imgs/whitelogo.png"
+                        alt="logo"
+                      />
+                    )}
+                  </>
+                )}
               </a>
             </Link>
           </div>
@@ -72,14 +94,14 @@ export default function TopNav() {
           >
             <li className="py-2">
               <Link href="/">
-                <a className="hover:text-blue-500 font-semibold rounded-full hover:shadow-lg hover:bg-white py-1 px-5 text-lg cursor-pointer">
+                <a className="hover:text-indigo-500 font-semibold rounded-full hover:shadow-lg hover:bg-white py-1 px-5 text-lg cursor-pointer">
                   Home
                 </a>
               </Link>
             </li>
             <li className="py-2">
               <Link href="/Aboutus">
-                <a className="hover:text-blue-500 font-semibold rounded-full hover:shadow-lg hover:bg-white py-1 px-5 text-lg cursor-pointer">
+                <a className="hover:text-indigo-500 font-semibold rounded-full hover:shadow-lg hover:bg-white py-1 px-5 text-lg cursor-pointer">
                   About
                 </a>
               </Link>
@@ -103,72 +125,72 @@ export default function TopNav() {
                 </span>
               </button>
               <ul className="tooltiparrow shadow-xl text-zinc-800 group-hover:opacity-100 group-hover:visible invisible opacity-0  absolute z-10 w-[220px] top-full left-0 bg-white rounded-xl p-4">
-                <li className="py-2 hover:text-blue-500 cursor-pointer">
-                  <Link href="/">
-                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                <li className="py-2 hover:text-indigo-500 cursor-pointer">
+                  <Link href="/courses/diploma-in-computer-applications">
+                    <a className="hover:text-indigo-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
                       DCA
                     </a>
                   </Link>
                 </li>
-                <li className="py-2 hover:text-blue-500 cursor-pointer">
-                  <Link href="/">
-                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                <li className="py-2 hover:text-indigo-500 cursor-pointer">
+                  <Link href="/courses/programming-post-graduate-diploma-course">
+                    <a className="hover:text-indigo-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
                       PGDCA
                     </a>
                   </Link>
                 </li>
-                <li className="py-2 hover:text-blue-500 cursor-pointer">
-                  <Link href="/">
-                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                <li className="py-2 hover:text-indigo-500 cursor-pointer">
+                  <Link href="/courses/desktop-publishing-courses">
+                    <a className="hover:text-indigo-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
                       DTP
                     </a>
                   </Link>
                 </li>
-                <li className="py-2 hover:text-blue-500 cursor-pointer">
-                  <Link href="/">
-                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                <li className="py-2 hover:text-indigo-500 cursor-pointer">
+                  <Link href="/courses/accounting">
+                    <a className="hover:text-indigo-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
                       Accounting
                     </a>
                   </Link>
                 </li>
-                <li className="py-2 hover:text-blue-500 cursor-pointer">
-                  <Link href="/">
-                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                <li className="py-2 hover:text-indigo-500 cursor-pointer">
+                  <Link href="/courses/typing">
+                    <a className="hover:text-indigo-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
                       Typing
                     </a>
                   </Link>
                 </li>
-                <li className="py-2 hover:text-blue-500 cursor-pointer">
-                  <Link href="/">
-                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                <li className="py-2 hover:text-indigo-500 cursor-pointer">
+                  <Link href="/courses/fundamentals">
+                    <a className="hover:text-indigo-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
                       Fundamentals
                     </a>
                   </Link>
                 </li>
-                <li className="py-2 hover:text-blue-500 cursor-pointer">
+                {/* <li className="py-2 hover:text-indigo-500 cursor-pointer">
                   <Link href="/">
-                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                    <a className="hover:text-indigo-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
                       DGD
                     </a>
                   </Link>
-                </li>
-                <li className="py-2 hover:text-blue-500 cursor-pointer">
-                  <Link href="/">
-                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                </li> */}
+                <li className="py-2 hover:text-indigo-500 cursor-pointer">
+                  <Link href="/courses/advanced-diploma-in-computer-application-course">
+                    <a className="hover:text-indigo-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
                       ADCA
                     </a>
                   </Link>
                 </li>
-                <li className="py-2 hover:text-blue-500 cursor-pointer">
-                  <Link href="/">
-                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                <li className="py-2 hover:text-indigo-500 cursor-pointer">
+                  <Link href="/courses/spoken-english">
+                    <a className="hover:text-indigo-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
                       Spoken EN
                     </a>
                   </Link>
                 </li>
-                <li className="py-2 hover:text-blue-500 cursor-pointer">
-                  <Link href="/">
-                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                <li className="py-2 hover:text-indigo-500 cursor-pointer">
+                  <Link href="/courses/course-on-computer-concepts">
+                    <a className="hover:text-indigo-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
                       CCC/0'Level
                     </a>
                   </Link>
@@ -193,9 +215,9 @@ export default function TopNav() {
                 </svg>
               </span>
               <ul className="tooltiparrow shadow-xl text-zinc-800 group-hover:opacity-100 group-hover:visible invisible opacity-0 absolute z-10 w-[130px] top-full left-0 bg-white rounded-xl p-4">
-                <li className="py-2 hover:text-blue-500 cursor-pointer">
+                <li className="py-2 hover:text-indigo-500 cursor-pointer">
                   <Link href="/gallery">
-                    <a className="hover:text-blue-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                    <a className="hover:text-indigo-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
                       Photo(s)
                     </a>
                   </Link>
@@ -205,7 +227,7 @@ export default function TopNav() {
 
             <li className="py-2">
               <Link href="/contact">
-                <a className="hover:text-blue-500 font-semibold rounded-full hover:shadow-lg hover:bg-white py-1 px-5 text-lg cursor-pointer">
+                <a className="hover:text-indigo-500 font-semibold rounded-full hover:shadow-lg hover:bg-white py-1 px-5 text-lg cursor-pointer">
                   Contact
                 </a>
               </Link>
@@ -217,7 +239,9 @@ export default function TopNav() {
             onClick={() => setdisplaymenu((prev) => !prev)}
           >
             <div
-              className={`${!y ? "bg-white" : " bg-blue-600"} rounded-full p-2`}
+              className={`${
+                !y ? "bg-white" : " bg-indigo-600"
+              } rounded-full p-2`}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

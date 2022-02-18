@@ -13,7 +13,6 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const url = params.slug;
-  console.log(url);
 
   const blog = course.filter(
     (item) => item.Course_title.split(" ").join("-").toLowerCase() === url
@@ -42,51 +41,59 @@ export default function CourseDetail({ data, url }) {
         </div>
       </div>
       <div className="py-20 max-w-7xl mx-auto px-5">
-        <div className="flex gap-10 divide-x ">
-          <h2 className="text-zinc-800 md:text-5xl text-4xl">
+        <div className="flex flex-col gap-5 ">
+          <span className="font-semibold bg-indigo-600 max-w-max px-7 py-2 rounded-full text-white text-xl">
+            {data.Course_name}
+          </span>
+          <h2
+            style={{ lineHeight: 1.2 }}
+            className=" text-zinc-800 max-w-3xl md:text-5xl text-4xl"
+          >
             {data.Course_title}
           </h2>
-          <div className="flex flex-col text-lg pl-12">
-            <span className="text-zinc-500">Category:</span>
-            <span className="font-semibold text-zinc-800">
-              {data.Course_name}
-            </span>
-          </div>
         </div>
-        <div className="w-full flex gap-8 py-14">
-          <div className="w-4/6 ">
-            <div className="w-11/12 flex flex-col gap-16">
+        <div className="w-full flex md:flex-row flex-col gap-14 md:gap-12 py-14">
+          <div className="md:w-4/6 w-full">
+            <div className="md:w-11/12 w-full flex flex-col gap-16">
               <div className="w-full">
                 <img
-                  src="/course/course4.jpeg"
+                  src={data.img}
                   className="w-full  rounded-md"
                   alt="course"
                 />
               </div>
-              <div className="flex flex-col gap-6 text-4xl font-semibold">
-                About the course
-                <p
-                  style={{ lineHeight: 1.7 }}
-                  className="md:text-lg font-normal"
-                >
-                  {data.Course_desription}
-                </p>
-              </div>
-              <div className="flex flex-col gap-6 text-4xl font-semibold">
-                About the course
-                <p
-                  style={{ lineHeight: 1.7 }}
-                  className="md:text-lg font-normal"
-                >
-                  {data.Course_desription}
-                </p>
+              <div className="divide-y divide-indigo-200 flex gap-14 flex-col">
+                <div className="flex flex-col gap-6 text-4xl font-semibold">
+                  About the course
+                  <p
+                    style={{ lineHeight: 1.7 }}
+                    className="md:text-lg text-[18px] font-normal"
+                  >
+                    {data.description_main}
+                  </p>
+                </div>
+                <div className="flex flex-col pt-14 gap-6 text-4xl font-semibold">
+                  Description{" "}
+                  <p
+                    style={{ lineHeight: 1.7 }}
+                    className="md:text-lg text-[18px] font-normal"
+                  >
+                    {data.description}
+                  </p>
+                  <p
+                    style={{ lineHeight: 1.7 }}
+                    className="md:text-lg text-[18px] font-normal"
+                  >
+                    {data.more_details}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div className="w-2/6 ">
+          <div className="w-full md:w-2/6 ">
             <div
               style={{ boxShadow: "0px 20px 50px 0px rgb(11 2 55 / 10%)" }}
-              className="bg-white  max-w-xs mr-auto px-10 py-5 rounded-xl flex flex-col divide-y "
+              className="bg-white  max-w-xs mx-auto md:mr-auto px-10 py-5 rounded-xl flex flex-col divide-y "
             >
               <div className="flex gap-3 py-5 items-center">
                 <svg

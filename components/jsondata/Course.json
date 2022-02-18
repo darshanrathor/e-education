@@ -5,21 +5,21 @@
     "post_url": "DCA",
     "Duration": "6-12 Months",
     "Level": "Intermidiate",
-    "Course_desription": " Diploma in Computer Application (DCA) is designed for SSC+ students to acquire knowledge in the field of basic ,computer applications,computerised accounting, graphic designing and web designin . On completion of DCA the student would be able to work at different levels in organisations who require these minimum skill sets for employment. The student would be given assignments and projects during the program",
-    "more_details": "DCA full form is  is a Diploma in Computer Application is a diploma course that can be pursued by a student who is interested in computer applications. DCA course duratation is 1 year. Candidates who want to pursue the course should have completed their 10th from any recognized board in India. The course imparts scientific, practical and technical knowledge to its learners about various computer tools that are used in day to day life. Every industry and organizations are in need of computer application in the current business scenario some of the basic subjects which are taught in the course are",
-    "Course_description 1": " Diploma in Computer Applications [DCA] is an undergraduate diploma course. This course helps students to gain vast knowledge right from the basics of computer applications. All major industries and firms which carry out business require basic computer application which would be taught to the candidate. The diploma course can also be called as one of the foundation course.  ",
-    "Career Opportunities": "Data Entry Operator, Tally Operator, Account Assistant, Faculty, Lab Instructor, DTP Operator, Creative Executive, Layout Designer, Printing & Designing Head, Web Designer, Web Site Tester, Website Layout Designer, Work as a Freelancer. Junior Programmer, Desktop Application Developer, Work as a Freelancer."
+    "img": "/course/DCA.jpeg",
+    "description_main": " Diploma in Computer Application (DCA) is designed for SSC+ students to acquire knowledge in the field of basic ,computer applications,computerised accounting, graphic designing and web designin . On completion of DCA the student would be able to work at different levels in organisations who require these minimum skill sets for employment. The student would be given assignments and projects during the program",
+    "more_details": " Diploma in Computer Application is a diploma course that can be pursued by a student who is interested in computer applications. Candidates who want to pursue the course should have completed their 10th from any recognized board in India. The course imparts scientific, practical and technical knowledge to its learners about various computer tools that are used in day to day life. Every industry and organizations are in need of computer application in the current business scenario some of the basic subjects which are taught in the course are",
+    "description": " Diploma in Computer Applications [DCA] is an undergraduate diploma course. This course helps students to gain vast knowledge right from the basics of computer applications. All major industries and firms which carry out business require basic computer application which would be taught to the candidate. The diploma course can also be called as one of the foundation course.  "
   },
   {
     "Course_name": "PGDCA",
-    "Course_title": "Programming  post graduate diploma course",
+    "Course_title": "Programming post graduate diploma course",
     "post_url": "PGDCA",
     "Duration": "1 Year",
+    "img": "/course/pgdca.jpeg",
     "Level": "Intermidiate",
-    "Course_desription": " PGDCA extensively deals with the theoretical and practical aspects of Computer Softwares and their applications. PGDCA courses focus on imparting knowledge to its students on various subjects like Database Management System, Operating System and Web ",
-    "more_details": " A Post Graduate Diploma in Computer Applications is a specialised programme for individuals who want to opt for a career in IT industry. It provides numerous opportunities to students enrolled in the course to opt for various careers such as web developer, web designer, computer language programmer, computer programmer, software developer, ethical hacker and various others",
-    "Course_description 1": "The PGDCA will also train students how to apply software technology for solving mathematical, communications, computing, or networking problems. The programme in addition also seeks to solve many commercial problems that arise out of software technology.",
-    "PGDCA: Jobs & Salary": " After successfully completing PGDCA courses students are offered job profiles like Information Technology Manager, Business Development Manager, Senior Analyst etc. The average starting salary that is received post completing PGDCA courses range between INR 2 - 4 LPA"
+    "description": "PGDCA extensively deals with the theoretical and practical aspects of Computer Softwares and their applications. PGDCA courses focus on imparting knowledge to its students on various subjects like Database Management System, Operating System and Web ",
+    "description_main": " A Post Graduate Diploma in Computer Applications is a specialised programme for individuals who want to opt for a career in IT industry. It provides numerous opportunities to students enrolled in the course to opt for various careers such as web developer, web designer, computer language programmer, computer programmer, software developer, ethical hacker and various others",
+    "more_details": "The PGDCA will also train students how to apply software technology for solving mathematical, communications, computing, or networking problems. The programme in addition also seeks to solve many commercial problems that arise out of software technology."
   },
 
   {
@@ -28,10 +28,10 @@
     "post_url": "DTP",
     "Duration": "Short",
     "Level": "Beginner",
-
+    "img": "/course/dca.jpeg",
     "more_details": " In order to become a DTP operator, computer application expertise, relevant hardware (such as a printer) and relevant software must be acquired (page layout software). Let us think of an example. Have you ever been to a cyber/internet cafe to fill out your form? Yes, its a DTP case! The method involves the development of a document (form) using software for page layout! ",
-    "Course_desription": " The appearance of page layouts can be enhanced by balancing their contrast, color and spac and Your document should be tailored according to the target audience and company , If you don’t want to purchase DTP facilities, you can outsource DTP services.",
-    "Course_description 1": "Desktop Publishing Courses deals with educating the students about the use of software for designing and creation of different types of documents. These Courses are often available as offline and online courses and sometimes may be found as a part of the graphic designing programs."
+    "description": " The appearance of page layouts can be enhanced by balancing their contrast, color and spac and Your document should be tailored according to the target audience and company , If you don’t want to purchase DTP facilities, you can outsource DTP services.",
+    "description_main": "Desktop Publishing Courses deals with educating the students about the use of software for designing and creation of different types of documents. These Courses are often available as offline and online courses and sometimes may be found as a part of the graphic designing programs."
   },
 
   {
@@ -39,11 +39,12 @@
     "Course_title": "Advanced Diploma In Computer Application course",
     "post_url": "ADCA",
     "Duration": "1 Year",
+    "img": "/course/ADCA.jpeg",
     "Level": "Intermidiate",
     "Course_highlits": " The course starts with an introduction to Information Technology, Linux, Operating Systems like Windows and DOS. Then it covers programs like System Analysis and Design, C Programming and Programming with Visual Basic, .NET. Other valuable applications like Programming languageS like C, C++, and Financial Accounting Application are also involved in it. Photoshop, CorelDraw, PageMaker,, Developer 2000 and PowerBuilder are also included in the course for students to have better job prospects",
-    "more_details": "Advance Diploma in Computer Applications acronym is ADCA is a course for a person who is good at maths and interested in computer technology. This course seeks to give the advance knowledge of computer applications. There is a huge demand for skilled people for handling Computer Applications.",
-    "Course_desription": "ADCA is a Diploma course in Computer Application. The main aim of The Advance Diploma In Computer Application program To prepare candidates in such a way that they can present and able to work in the world of computers and software. This course helps to provide information related to technologies and research which is carried out in the field of computer application.",
-    "Course_description 1": "The ADCA full form is Advanced Diploma In Computer Application course. Includes both theoretical as well as practical aspects so that it can provide information about the latest computer-related developments. The candidates also learn about designing and developing applications and system software which may be enforced in businesses or the corporate sector."
+    "more_details": "Advance Diploma in Computer Applications  is ADCA is a course for a person who is good at maths and interested in computer technology. This course seeks to give the advance knowledge of computer applications. There is a huge demand for skilled people for handling Computer Applications.",
+    "description": "ADCA is a Diploma course in Computer Application. The main aim of The Advance Diploma In Computer Application program To prepare candidates in such a way that they can present and able to work in the world of computers and software. This course helps to provide information related to technologies and research which is carried out in the field of computer application.",
+    "description_main": "The ADCA full form is Advanced Diploma In Computer Application course. Includes both theoretical as well as practical aspects so that it can provide information about the latest computer-related developments. The candidates also learn about designing and developing applications and system software which may be enforced in businesses or the corporate sector."
   },
 
   {
@@ -51,31 +52,34 @@
     "Course_title": "Typing",
     "post_url": "Typing ",
     "Duration": "Short",
+    "img": "/course/dca.jpeg",
     "Level": "Beginner",
-    "Course_description 1": "Typists earn INR 2 – 2.5 lakhs per annum depending upon skillset and location. Typists are paid the highest in Hyderabad & New Delhi region. Skillsets like Microsoft office, office management, cold calling, and knowledge about sales, in general, can help typists gain higher positions in any organization.",
-    "more_details": "Certificate courses have become more popular in recent times among other educational degrees. They are delivered both online and offline, making them versatile and flexible.",
-    "Course_desription": "Typing courses are offered through certificate programs, but they can also be offered in some associate's or bachelor's degree programs that offer office technology or administration. Some typing classes are stand-alone courses that are not taken for credit"
+    "more_details": "Typists earn INR 2 – 2.5 lakhs per annum depending upon skillset and location. Typists are paid the highest in Hyderabad & New Delhi region. Skillsets like Microsoft office, office management, cold calling, and knowledge about sales, in general, can help typists gain higher positions in any organization.",
+    "description": "Certificate courses have become more popular in recent times among other educational degrees. They are delivered both online and offline, making them versatile and flexible.",
+    "description_main": "Typing courses are offered through certificate programs, but they can also be offered in some associate's or bachelor's degree programs that offer office technology or administration. Some typing classes are stand-alone courses that are not taken for credit"
   },
 
   {
-    "Course_name": "Accounting  ",
+    "Course_name": "Accounting",
     "Course_title": "Accounting",
     "post_url": "Accounting ",
     "Duration": "1 Year",
     "Level": "Intermidiate",
-    "Course_description 1": " Certificate in Accounting courses expands the career possibilities of candidates seeking work in the fields of business, finance, taxation, auditing, corporate finance, accounting systems, etc, The program will provide you skills and knowledge that can be applied to a number of industries and businesses where accountants will always be in demand.",
-    "Course_desription": "Akash Institute aims to develop student into a complete accountant, working on accounting related software on computers. This program basically caters to Commerce graduates as well as people who are interested to make career in computerized accounting. The minimum qualification required for enrollment in this program is HSC. The program has modular pattern of teaching and examination. On successful completion of SPA the student would be awarded final certification. Student has to appear for MBTB examinations by paying examination fees as prescribed from time to time for all modules",
+    "img": "/course/Accounting.jpeg",
+    "description": " Certificate in Accounting courses expands the career possibilities of candidates seeking work in the fields of business, finance, taxation, auditing, corporate finance, accounting systems, etc, The program will provide you skills and knowledge that can be applied to a number of industries and businesses where accountants will always be in demand.",
+    "description_main": "Akash Institute aims to develop student into a complete accountant, working on accounting related software on computers. This program basically caters to Commerce graduates as well as people who are interested to make career in computerized accounting. The minimum qualification required for enrollment in this program is HSC. The program has modular pattern of teaching and examination. On successful completion of SPA the student would be awarded final certification. Student has to appear for MBTB examinations by paying examination fees as prescribed from time to time for all modules",
     "more_details": "Professional Corporate Accountants, Tally Professional, Account Assistant, Tax Process Executive, Teaching Professional for Tally and Taxations, Jobs in Stock Market, Self Employment in Tally - GST Work. RCPA give Career readiness for Accounting and Finance Industry , The course will provide knowledge about typical business administration schemes, the ethics of accountancy, statistics, and accounting theory to the students who will land them lucrative career options."
   },
 
   {
-    "Course_name": "Fundamentals  ",
-    "Course_title": "Desktop Publishing Courses",
+    "Course_name": "Fundamentals",
+    "Course_title": "Fundamentals",
     "post_url": "Fundamentals ",
     "Duration": "1 Year",
+    "img": "/course/Fundamental.jpeg",
     "Level": "Intermidiate",
-    "more_details": "his course deals with fundamentals of computer. Which includes generations of computer, evolution and development of microprocessor, input and output devices, primary and secondary storage devices, programming languages etc. It also deals with the hardware and software aspects of the computer like operating system, application software and system software. It provides an overview of functions and working of central processing unit, motherboard and other peripherals.",
-    "Course_desription": "Akash Institute aims to develop student into a complete accountant, working on accounting related software on computers. This program basically caters to Commerce graduates as well as people who are interested to make career in computerized accounting. The minimum qualification required for enrollment in this program is HSC. The program has modular pattern of teaching and examination. On successful completion of SPA the student would be awarded final certification. Student has to appear for MBTB examinations by paying examination fees as prescribed from time to time for all modules"
+    "description": "This course deals with fundamentals of computer. Which includes generations of computer, evolution and development of microprocessor, input and output devices, primary and secondary storage devices, programming languages etc. It also deals with the hardware and software aspects of the computer like operating system, application software and system software. It provides an overview of functions and working of central processing unit, motherboard and other peripherals.",
+    "description_main": "Akash Institute aims to develop student into a complete accountant, working on accounting related software on computers. This program basically caters to Commerce graduates as well as people who are interested to make career in computerized accounting. The minimum qualification required for enrollment in this program is HSC. The program has modular pattern of teaching and examination. On successful completion of SPA the student would be awarded final certification. Student has to appear for MBTB examinations by paying examination fees as prescribed from time to time for all modules"
   },
 
   {
@@ -84,9 +88,10 @@
     "post_url": "Spoken English  ",
     "Duration": "Short",
     "Level": "Beginner",
+    "img": "/course/English.jpeg",
     "more_details": "One must be focused and disciplined. It is because learning a new language needs a lot of hard work and practice. The candidate should be patient as it may take a long time to know the language accurately. Someone with a clear voice can learn the accent soon",
-    "Course_desription": "Being confident with your English can enhance your life in so many ways. It can improve your social life, career prospects, and can help you to explore the world more freelty , English is the language of business as well. No matter which country you visit, knowing English can make your journey better. It is because at least a few people in any country know English. In this article, you will get all the details about the English speaking course like its duration, fee structure, admission procedure, career prospect, etc.",
-    "Course_description1": "In our classes, you will participate in activities that will improve your ability to speak naturally and confidently. With lessons based on real-life topics, you will talk, practise and improve your fluency and accuracy. Our highly qualified teachers will help you achieve your goals through live online classes and activity-based learning. The course curriculum consists of extensive speaking practice, strategies, and techniques for effective communication."
+    "description_main": "Being confident with your English can enhance your life in so many ways. It can improve your social life, career prospects, and can help you to explore the world more freelty , English is the language of business as well. No matter which country you visit, knowing English can make your journey better. It is because at least a few people in any country know English. In this article, you will get all the details about the English speaking course like its duration, fee structure, admission procedure, career prospect, etc.",
+    "description": "In our classes, you will participate in activities that will improve your ability to speak naturally and confidently. With lessons based on real-life topics, you will talk, practise and improve your fluency and accuracy. Our highly qualified teachers will help you achieve your goals through live online classes and activity-based learning. The course curriculum consists of extensive speaking practice, strategies, and techniques for effective communication."
   },
 
   {
@@ -95,8 +100,9 @@
     "post_url": " Course on Computer Concepts  ",
     "Duration": "1 Year",
     "Level": "Expert",
+    "img": "/course/ccc.webp",
     "more_details": "This helps the small business networks, homemakers, and others to keep up their little records utilizing computers and get every one of the advantages of Information Technology.",
-    "Course_desription": "This course is designed to aim at imparting a basic level IT Literacy programme for the common man. This programme has essentially been conceived with an idea of giving an opportunity to the common man to attain computer literacy thereby contributing to increased and speedy PC penetration in different walks of life. After completing the course the incumbent should be able to the use the computer for basic purposes of preparing his personnel/business letters, viewing information on internet (the web), receiving and sending mails, preparing his business presentations, preparing small databases etc.",
-    "Course_description1": "This helps the small business communities, housewives, etc. to maintain their small accounts using the computers and enjoy in the world of Information Technology. This course is, therefore, designed to be more practical oriented."
+    "description_main": "This course is designed to aim at imparting a basic level IT Literacy programme for the common man. This programme has essentially been conceived with an idea of giving an opportunity to the common man to attain computer literacy thereby contributing to increased and speedy PC penetration in different walks of life. After completing the course the incumbent should be able to the use the computer for basic purposes of preparing his personnel/business letters, viewing information on internet (the web), receiving and sending mails, preparing his business presentations, preparing small databases etc.",
+    "description": "This helps the small business communities, housewives, etc. to maintain their small accounts using the computers and enjoy in the world of Information Technology. This course is, therefore, designed to be more practical oriented."
   }
 ]
