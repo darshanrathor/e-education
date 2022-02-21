@@ -30,15 +30,16 @@ export default function Contact() {
       formValue.email !== ""
     ) {
       fetch(
-        "https://0z5scqbk6c.execute-api.ap-south-1.amazonaws.com/default/e-education",
+        "https://5yab4wx3hj.execute-api.ap-south-1.amazonaws.com/default/e-educationContact",
         {
           method: "post",
           // headers: { "Content-Type": "application/json" },
           body: JSON.stringify(formValue),
         }
       ).then((res) => {
-        notify();
-        setformValue(initialvalue);
+        console.log(res.json());
+        // notify();
+        // setformValue(initialvalue);
       });
     } else {
       seterror("All detailed must be filed");

@@ -38,8 +38,11 @@ export default function Home() {
             <h1 style={{ lineHeight: 1 }} className="md:text-6xl text-5xl">
               Build skills with courses flexible Advance courses
             </h1>
-            <button className="bg-blue-700 px-5 py-3.5 rounded hover:bg-blue-600 text-white font-bold text-xl max-w-[250px]">
-              Join For Free
+            <button
+              onClick={() => router.push("/courses")}
+              className="bg-blue-700 px-5 py-3.5 rounded hover:bg-blue-600 text-white font-bold text-xl max-w-[250px]"
+            >
+              View courses
             </button>
           </div>
           <div className="w-full">
@@ -56,7 +59,10 @@ export default function Home() {
           <Header extra="max-w-xl md:text-5xl text-3xl">
             We Provide The Best Teaching/Learning Support For All
           </Header>
-          <button className="hover:bg-blue-700 bg-blue-600 max-w-max text-white rounded-full py-2 font-bold text-lg px-7 ">
+          <button
+            onClick={() => router.push("/contact")}
+            className="hover:bg-blue-700 bg-blue-600 max-w-max text-white rounded-full py-2 font-bold text-lg px-7 "
+          >
             Enroll Today
           </button>
         </div>
@@ -76,16 +82,10 @@ export default function Home() {
           <p className="md:text-lg  text-zinc-800">
             As well know I.T has become the heart and soul of every part of life
             new a day. In the light of this statement it has become compulsory
-            for every type of education stream to have I.T in its plumage. To
-            meet your need, we have computer hardware and software programs of
-            all sorts on your doorstep by the efforts of Akash Institute, a
-            renowned national level group of computer education. All the courses
-            are taught by experienced and certified faculty. Our trainers
-            constantly update their technical skills to maintain their
-            expertise.
+            for every type of education stream to have I.T in its plumage.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-6xl gap-9 mx-auto">
+        <div className="grid grid-cols-1 mt-5 md:mt-10 sm:grid-cols-2 md:grid-cols-3 max-w-6xl gap-9 mx-auto">
           <div className="flex flex-col gap-5 bg-white p-8 rounded-xl">
             <div className="flex justify-center">
               <img

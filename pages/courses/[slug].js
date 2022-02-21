@@ -29,12 +29,12 @@ export default function CourseDetail({ data, url }) {
       <div className="backgroundgradient h-[350px] md:h-[450px] bg-[url('/course/banner.jpeg')] bg-cover bg-center w-full">
         <div className="relative flex flex-col gap-5 z-[2] px-5 top-1/2 -translate-y-1/2 max-w-7xl mx-auto w-full ">
           <h1 className="text-white">Courses</h1>
-          <div className="flex gap-3  items-center pl-1">
-            <span className="text-zinc-300">Home</span>
+          <div className="flex gap-3 text-lg items-center pl-1">
+            <span className="text-zinc-200">Home</span>
             <span className="w-1 h-1 rounded-full bg-white "></span>
-            <span className="text-zinc-300">Courses</span>
+            <span className="text-zinc-200">Courses</span>
             <span className="w-1 h-1 rounded-full bg-white "></span>
-            <span className="text-white capitalize">
+            <span className="text-white truncate pr-10 max-w-sm capitalize">
               {url.split("-").join(" ")}
             </span>
           </div>
@@ -42,12 +42,12 @@ export default function CourseDetail({ data, url }) {
       </div>
       <div className="py-20 max-w-7xl mx-auto px-5">
         <div className="flex flex-col gap-5 ">
-          <span className="font-semibold bg-indigo-600 max-w-max px-7 py-2 rounded-full text-white text-xl">
+          <span className="font-semibold bg-indigo-600 max-w-max px-6 md:px-7 py-1.5 md:py-2 rounded-full text-white text-sm md:text-xl">
             {data.Course_name}
           </span>
           <h2
             style={{ lineHeight: 1.2 }}
-            className=" text-zinc-800 max-w-3xl md:text-5xl text-4xl"
+            className=" text-zinc-800  max-w-3xl md:text-5xl text-4xl"
           >
             {data.Course_title}
           </h2>
@@ -58,7 +58,7 @@ export default function CourseDetail({ data, url }) {
               <div className="w-full">
                 <img
                   src={data.img}
-                  className="w-full  rounded-md"
+                  className="w-full sm:h-[350px]  rounded-md"
                   alt="course"
                 />
               </div>
