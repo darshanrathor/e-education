@@ -46,7 +46,7 @@ export default function Index() {
   return (
     <>
       <div className="    w-full">
-        <div className="backgroundgradient h-[450px] bg-[url('/course/banner.jpeg')] bg-cover bg-center w-full">
+        <div className="backgroundgradient h-[350px] md:h-[450px] bg-[url('/course/banner.jpeg')] bg-cover bg-center w-full">
           <div className="relative flex flex-col gap-5 z-[2] px-5 top-1/2 -translate-y-1/2 max-w-7xl mx-auto w-full ">
             <h1 className="text-white">Courses</h1>
             <div className="flex gap-3  items-center pl-1">

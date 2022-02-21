@@ -45,7 +45,6 @@ export default function TopNav() {
   };
   const router = useRouter();
   const url = router.asPath.split("/")[1];
-  console.log(url);
   return (
     <>
       {diaplsymenu && <MobilemenuContent passclose={handleclose} />}
@@ -71,7 +70,7 @@ export default function TopNav() {
                       <Image
                         layout="fill"
                         objectFit="contain"
-                        src="/imgs/indigologo.png"
+                        src="/imgs/bluelogo.png"
                         alt="logo"
                       />
                     ) : (

@@ -2,15 +2,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { Header, Paragraph } from "../components/commonComponent/commonSIze";
 import SizeComponent from "../components/commonComponent/sizeComponent";
-// import React from "react";
-// import { render } from "react-dom";
-// import ReactWhatsapp from "react-whatsapp";
-
-// const App = () => (
-//   <ReactWhatsapp number="1-212-736-5000" message="Hello World!!!" />
-// );
-
-// render (<App /> , document.getElementById("root"));
 
 export default function Home() {
   const review = [
