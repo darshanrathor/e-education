@@ -53,7 +53,7 @@ export default function Footer() {
         ""
       ) : (
         <div className="px-5 absolute left-0 -top-[130px] w-full pb-24">
-          <div className="flex justify-between gap-10 sm:flex-row flex-col overflow-hidden relative  z-[2] before:bg-right before:absolute before:top-0 before:z-[-1] before:-translate-y-9 before:scale-[1.2] before:translate-x-[300px] md:before:translate-x-9  before:right-0 before:bg-[url('/imgs/cta-shape.png')] before:bg-contain before:w-[400px] before:h-[400px] before:bg-no-repeat bg-[#2b4eff] py-8 px-8 md:py-14 md:px-16 w-full rounded-lg max-w-6xl mx-auto">
+          <div className="flex justify-between gap-10 sm:flex-row flex-col overflow-hidden relative  z-[2] before:bg-right before:absolute before:top-0 before:z-[-1] before:-translate-y-9 before:scale-[1.2] before:translate-x-[300px] md:before:translate-x-9  before:right-0 before:bg-[url('/imgs/cta-shape.png')] before:bg-contain before:w-[400px] before:h-[400px] before:bg-no-repeat bg-[#2b4eff] py-6 px-6 md:py-14 md:px-16 w-full rounded-lg max-w-6xl mx-auto">
             <h2
               style={{ lineHeight: 1.3 }}
               className="text-white md:text-5xl text-3xl font-bold max-w-2xl"
@@ -97,7 +97,9 @@ export default function Footer() {
             </a>
 
             <a
-              href="/"
+              target="_blank"
+              rel="noreferrer"
+              href="mailto:rahulshah1997@gmail.com"
               className="p-2 group bg-rose-600 border-2 border-transparent hover:border-rose-500 hover:bg-transparent rounded-md"
             >
               <svg
@@ -180,7 +182,12 @@ export default function Footer() {
                 </svg>
                 (+91)9454706492
               </span>
-              <span className="flex gap-3 items-center text-zinc-300">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="mailto:rahulshah1997@gmail.com"
+                className="flex gap-3 items-center text-zinc-300"
+              >
                 <svg
                   viewBox="0 0 32 32"
                   className="h-6 w-6 fill-zinc-300"
@@ -191,8 +198,8 @@ export default function Footer() {
                     <path d="M29,6H3L2.92,6a.78.78,0,0,0-.21,0l-.17.07a.65.65,0,0,0-.15.1.67.67,0,0,0-.15.14l-.06.06a.36.36,0,0,0,0,.09,1.08,1.08,0,0,0-.08.19A1.29,1.29,0,0,0,2,6.9S2,7,2,7V25a1,1,0,0,0,1,1H29a1,1,0,0,0,1-1V7A1,1,0,0,0,29,6ZM16,14.81,6.2,8H27.09ZM4,24V8.91l11.43,7.91,0,0a1.51,1.51,0,0,0,.18.09l.08,0A1.09,1.09,0,0,0,16,17h0a1,1,0,0,0,.41-.1l.07,0,0,0L28,9.79V24Z" />
                   </g>
                 </svg>
-                rrshah@circlip.net
-              </span>
+                rahulshah1997@gmail.com
+              </a>
             </div>
           </div>
         </div>

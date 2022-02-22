@@ -139,7 +139,7 @@ export default function Index() {
                 duration={item.Duration}
                 title={item.Course_title}
                 desc={item["Course_desription"]?.substring(0, 80)}
-                image="/course/course2.jpeg"
+                image={item["img"]}
               />
             ))}
           </div>

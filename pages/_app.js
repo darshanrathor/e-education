@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <div>
-        <div className="fixed bottom-5 z-50 w-full right-3">
+        <div className="fixed bottom-2 z-50 w-full -right-1 md:right-2">
           <WhatsAppWidget
             phoneNumber="1-212-736-5000"
             messageBoxTxt="Hi Team, is there any related service available ?"
