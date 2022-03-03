@@ -153,7 +153,7 @@ export default function Home() {
               duration="6-12 Months"
               title="Diploma in Computer Applications"
               desc="Diploma in Computer Application (DCA) is designed for SSC+ students"
-              image="/course/dca.png"
+              image="/course/DCA.png"
             />
             <Card
               link="/course/desktop-publishing-courses"
@@ -161,7 +161,7 @@ export default function Home() {
               duration="Short"
               title="Desktop Publishing Courses"
               desc=" PGDCA extensively deals with the theoretical and practical aspects of Computer Softwares"
-              image="/course/dtp.jpeg"
+              image="/course/DTP.jpeg"
             />
 
             <Card
@@ -170,7 +170,7 @@ export default function Home() {
               duration="1 Year"
               title="Accounting"
               desc="Akash Institute aims to develop student into a complete accountant, working on accounting related software on computers."
-              image="/course/accounting.jpeg"
+              image="/course/Accounting.jpeg"
             />
           </div>
           <Link href="/courses">
