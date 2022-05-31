@@ -198,7 +198,7 @@ export default function Contact() {
                     href="mailto:rahulshah1997@gmail.com"
                     className="mt-1 ml-10 group-hover:text-white md:text-lg"
                   >
-                    rahulshah1997@gmail.com
+                    akashinstitute11@gmail.com
                   </a>
                 </div>
 
@@ -219,9 +219,19 @@ export default function Contact() {
                     Phone{" "}
                   </h5>
                   <p className="mt-1 ml-10 group-hover:text-white md:text-lg">
-                    Mobile: (+91)8356037560
+                    Mobile: (+91)8418905285, 9170387879
                   </p>
+
+
+
+                
+
                 </div>
+
+                 
+
+
+
                 <div className="flex w-full flex-col gap-5">
                   <h6>Follow Us</h6>
                   <div className="flex gap-5 ">

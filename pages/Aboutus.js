@@ -1,3 +1,6 @@
+import React from "react";
+import About from "../components/about"
+
 export default function Aboutus() {
   return (
     <>
@@ -100,6 +103,16 @@ export default function Aboutus() {
           </div>
         </div>
       </div>
+
+      <About />
+
+
     </>
   );
 }
+
+
+
+
+
+

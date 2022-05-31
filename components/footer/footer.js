@@ -99,7 +99,7 @@ export default function Footer() {
             <a
               target="_blank"
               rel="noreferrer"
-              href="mailto:rahulshah1997@gmail.com"
+              href="mailto:akashinstitute11@gmail.com"
               className="p-2 group bg-rose-600 border-2 border-transparent hover:border-rose-500 hover:bg-transparent rounded-md"
             >
               <svg
@@ -180,7 +180,7 @@ export default function Footer() {
                     <path d="M428.15,269.73a15,15,0,0,1-15-15c0-89.69-73-162.66-162.65-162.66a15,15,0,0,1,0-30c106.23,0,192.65,86.43,192.65,192.66A15,15,0,0,1,428.15,269.73Z" />
                   </g>
                 </svg>
-                (+91)9454706492
+                (+91)8418905285, 9170387879
               </span>
               <a
                 target="_blank"
@@ -198,7 +198,7 @@ export default function Footer() {
                     <path d="M29,6H3L2.92,6a.78.78,0,0,0-.21,0l-.17.07a.65.65,0,0,0-.15.1.67.67,0,0,0-.15.14l-.06.06a.36.36,0,0,0,0,.09,1.08,1.08,0,0,0-.08.19A1.29,1.29,0,0,0,2,6.9S2,7,2,7V25a1,1,0,0,0,1,1H29a1,1,0,0,0,1-1V7A1,1,0,0,0,29,6ZM16,14.81,6.2,8H27.09ZM4,24V8.91l11.43,7.91,0,0a1.51,1.51,0,0,0,.18.09l.08,0A1.09,1.09,0,0,0,16,17h0a1,1,0,0,0,.41-.1l.07,0,0,0L28,9.79V24Z" />
                   </g>
                 </svg>
-                rahulshah1997@gmail.com
+                akashinstitute11@gmail.com
               </a>
             </div>
           </div>
