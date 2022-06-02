@@ -1,0 +1,50 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  li {
+    @apply transition-colors ease-linear duration-150;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-zinc-800;
+  }
+  h1 {
+    @apply font-bold text-4xl md:text-5xl;
+  }
+  h2 {
+    @apply font-bold text-3xl md:text-4xl;
+  }
+  h3 {
+    @apply font-semibold text-3xl md:text-4xl;
+  }
+  h4 {
+    @apply font-semibold text-2xl md:text-3xl;
+  }
+  h5,
+  h6 {
+    @apply font-semibold text-xl md:text-2xl;
+  }
+  p {
+    @apply text-zinc-700;
+  }
+  a {
+    @apply transition duration-150 ease-in;
+  }
+  .st:focus-within ~ label,
+  .st:not(:placeholder-shown) ~ label {
+    @apply transform scale-75 -translate-y-6 top-2;
+  }
+
+  .st:focus-within ~ label {
+    @apply text-blue-700;
+  }
+  .labelt {
+    @apply origin-[0]  absolute left-0 top-3  transition-all cursor-text	 duration-150 ease-in font-semibold;
+  }
+}
