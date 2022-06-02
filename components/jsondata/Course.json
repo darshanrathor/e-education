@@ -48,6 +48,32 @@
   },
 
   {
+    "Course_name": "Digital Marketing",
+    "Course_title": "Digital Marketing",
+    "post_url": "Digital Marketing",
+    "Duration": "1 Year",
+    "img": "/course/gst.jpeg",
+    "Level": "Intermidiate",
+    "Course_highlits": " Digital Marketing Manager, SEO Executive, Social Media Marketing Expert in Startups, Mid-level & MNC Companies",
+    "more_details": "The DMCA full form is Digital Marketing Certified Associate. Interested candidates can also pursue Digital Marketing Diploma Course.",
+    "description": "it is a good career option as of now. Digital Marketing is rapidly increasing and growing career path. If more communication channels are available, the need for more digital marketing people is required. ",
+    "description_main": "Digital marketing is the best & trending way of marketing nowadays. It is all about reaching customers via various digital channels like search engines, social media, email, and many more. Digital Marketing course content will make sure you master the art of online marketing by reaching your target audiences in a more powerful and accurate way through several digital channels, to impress and engage with them for converting them to customers. It helps you to develop and manage marketing techniques for your company website"
+  },
+
+  {
+    "Course_name": "MS Office ",
+    "Course_title": "MS office",
+    "post_url": "MS Office",
+    "Duration": "1 Year",
+    "img": "/course/ms.jpeg",
+    "Level": "Intermidiate",
+    "Course_highlits": " There are a large number of job opportunities after pursuing the various courses offered by the Microsoft Team. Some of those are briefly discussed below along with their average salary and required skills.",
+    "more_details": "The Certificate Microsoft Courses are offered on Online mode. These courses are for those who are interested in learning the software and hardware and technical courses.",
+    "description": "The Microsoft courses can be pursued at certificate level, diploma level, training, bachelor level and master level. ",
+    "description_main": "Microsoft Office is one of the most used software worldwide. Microsoft Office has many products mainly Microsoft Word, Microsoft PowerPoint & Microsoft Excel. In this course of MS office, all three products are covered."
+  },
+
+  {
     "Course_name": "Typing ",
     "Course_title": "Typing",
     "post_url": "Typing ",

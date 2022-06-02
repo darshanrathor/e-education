@@ -22,12 +22,10 @@ export default function Test() {
         </div>
         <div className="w-full md:w-2/5 flex flex-col gap-5">
           <h2 className="md:text-4xl text-3xl">
-            Measure success with key results.
+          Akash Institute
           </h2>
           <p>
-            Track progress with numerical, monetary, true/false, and task Targets.
-            Create sprint Targets by adding tasks from different teams into a
-            Goal, create weekly sales Targets, and more.
+          is a technology-driven, professionally managed & well diversified IT Company having a definite & competitive edge in the field of IT Training. We are committed to high, steady, and sustainable growth, excelling in business model, encompassing core areas of Information Technology.
           </p>
         </div>
       </div>

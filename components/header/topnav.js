@@ -145,6 +145,29 @@ export default function TopNav() {
                     </a>
                   </Link>
                 </li>
+
+
+
+                <li className="py-2 hover:text-indigo-500 cursor-pointer">
+                  <Link href="/courses/digital-marketing">
+                    <a className="hover:text-indigo-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                      Digital Marketing
+                    </a>
+                  </Link>
+                </li>
+
+                <li className="py-2 hover:text-indigo-500 cursor-pointer">
+                  <Link href="/courses/ms-office">
+                    <a className="hover:text-indigo-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
+                      MS Office
+                    </a>
+                  </Link>
+                </li>
+
+
+
+
+
                 <li className="py-2 hover:text-indigo-500 cursor-pointer">
                   <Link href="/courses/accounting">
                     <a className="hover:text-indigo-500 font-semibold rounded-full px-3 text-lg cursor-pointer">
