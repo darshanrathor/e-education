@@ -13,61 +13,61 @@ export default function photo() {
           <div className="  px-5">
             <div className=" items-center max-w-6xl  mx-auto w-full grid sm:grid-cols-2 md:grid-cols-3 gap-10">
               <img
-                src="\gallery\5.jpeg "
+                src="/photo/1.jpeg "
                 width={400}
                 height={400}
                 className=" inline rounded"
               ></img>
               <img
-                src="\gallery\3.jpeg "
+                src="/photo/2.jpeg "
                 width={400}
                 height={400}
                 className=" inline rounded"
               ></img>
               <img
-                src="\gallery\4.jpeg "
+                src="/photo/3.jpeg "
                 width={400}
                 height={400}
                 className=" inline rounded"
               ></img>
               <img
-                src="\gallery\5.jpeg "
+                src="/photo/4.jpeg "
+                width={600}
+                height={100}
+                className=" inline rounded"
+              ></img>
+              <img
+                src="/photo/5.jpeg "
                 width={400}
                 height={400}
                 className=" inline rounded"
               ></img>
               <img
-                src="\gallery\4.jpeg "
+                src="/photo/1.jpeg "
                 width={400}
                 height={400}
                 className=" inline rounded"
               ></img>
               <img
-                src="\gallery\3.jpeg "
+                src="/photo/7.jpeg "
                 width={400}
                 height={400}
                 className=" inline rounded"
               ></img>
               <img
-                src="\gallery\3.jpeg "
+                src="/photo/8.jpeg "
                 width={400}
                 height={400}
                 className=" inline rounded"
               ></img>
               <img
-                src="\gallery\5.jpeg "
+                src="/photo/9.jpeg "
                 width={400}
-                height={400}
+                height={300}
                 className=" inline rounded"
               ></img>
               <img
-                src="\gallery\3.jpeg "
-                width={400}
-                height={400}
-                className=" inline rounded"
-              ></img>
-              <img
-                src="\gallery\3.jpeg "
+                src="/photo/10.jpeg "
                 width={400}
                 height={400}
                 className=" inline rounded"

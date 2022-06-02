@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
       <div>
         <div className="fixed bottom-2 z-50 w-full -right-1 md:right-2">
           <WhatsAppWidget
-            phoneNumber="1-212-736-5000"
+            phoneNumber="+918418905285"
             messageBoxTxt="Hi Team, is there any related service available ?"
           />
         </div>
